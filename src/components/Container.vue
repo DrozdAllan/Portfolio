@@ -1,37 +1,28 @@
 <template>
-<v-main>
- <v-parallax
-    dark
-    src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
-    height="1500"
-  >
-    <v-row
-      align="center"
-      justify="center"
-    >
-      <v-col
-        class="text-center"
-        cols="12"
-      >
-        <h1 class="display-1 font-weight-thin mb-4">
-          Vuetify
-        </h1>
-        <h4 class="subheading">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus numquam provident officia placeat illo animi mollitia deleniti a, vero ad consectetur vel amet unde, itaque velit impedit laborum laboriosam ab.
-          
-        </h4>
-      </v-col>
-    </v-row>
-  </v-parallax>
-</v-main>
+  <v-main>
+    <about />
+
+    <services />
+
+    <skills />
+
+    <portfolio />
+
+    <contact />
+  </v-main>
 </template>
 
 <script>
-export default {
-name: 'Container',
-}
+  import about from "./about";
+import Contact from './contact.vue';
+import Portfolio from './portfolio.vue';
+  import services from "./services.vue";
+import Skills from './skills.vue';
+  export default {
+    components: { about, services, Skills, Portfolio, Contact },
+    name: "container",
+    
+  };
 </script>
 
-<style>
-
-</style>
+<style></style>

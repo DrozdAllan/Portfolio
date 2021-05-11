@@ -3,12 +3,12 @@
 </template>
 
 <script>
-  import Home from "./views/Home.vue";
+  import home from './views/home';
 
   export default {
     name: "App",
     components: {
-      Home,
+      home,
     },
     data: () => ({
       //
