@@ -1,12 +1,10 @@
 <template>
     <v-parallax dark src="../assets/portfolioMedium.jpg" height="1000">
-    <v-row>
-      <v-col>
-          <span>
-        <h1>What I've done</h1>
-        </span>
-      </v-col>
-    </v-row>
+
+        <div class="titre">
+          What I've done
+        </div>
+
   </v-parallax>
 </template>
 
@@ -16,6 +14,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="sass" scoped>
+  .titre
+    color: rgb(55, 134, 97)
+    font-size: 45px
 </style>
