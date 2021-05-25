@@ -1,21 +1,14 @@
 <template>
-    <v-parallax dark src="../assets/contactMedium.jpg" height="1300">
-
-        <div class="titre">
-          Let's talk !
-        </div>
-
-  </v-parallax>
+  <v-container>
+    <div class="text-h2 white--text">
+      Let's talk !
+    </div>
+  </v-container>
 </template>
 
 <script>
-export default {
-
-}
+  export default {};
 </script>
 
 <style lang="sass" scoped>
-  .titre
-    color: rgb(55, 134, 97)
-    font-size: 45px
 </style>

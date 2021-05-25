@@ -1,21 +1,14 @@
 <template>
-    <v-parallax dark src="../assets/portfolioMedium.jpg" height="1000">
-
-        <div class="titre">
-          What I've done
-        </div>
-
-  </v-parallax>
+  <v-container>
+    <div class="text-h2 white--text">
+      What I've done
+    </div>
+  </v-container>
 </template>
 
 <script>
-export default {
-
-}
+  export default {};
 </script>
 
 <style lang="sass" scoped>
-  .titre
-    color: rgb(55, 134, 97)
-    font-size: 45px
 </style>

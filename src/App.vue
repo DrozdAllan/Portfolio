@@ -1,17 +1,154 @@
 <template>
-  <home />
+  <v-app class="my-application">
+    <v-navigation-drawer app dark color="noir">
+      <v-list>
+        <div class="text-center">
+          <v-avatar color="bleu" size="90">
+            <span class="text-h3">AD</span>
+          </v-avatar>
+          <v-list-item-title>
+            <span class="text-h4">Allan Drozd</span>
+            <v-list-item-subtitle class="text-h5"
+              >Web Developer</v-list-item-subtitle
+            >
+          </v-list-item-title>
+        </div>
+        <v-divider></v-divider>
+
+        <v-list-item
+          link
+          @click="
+            $vuetify.goTo('#about', {
+              duration: '1500',
+              easing: 'easeInOutQuad',
+            })
+          "
+        >
+          <v-list-item-icon>
+            <v-icon>mdi-account-edit</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title>About Me</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item
+          link
+          @click="
+            $vuetify.goTo('#services', {
+              duration: '1500',
+              easing: 'easeInOutQuad',
+            })
+          "
+        >
+          <v-list-item-icon>
+            <v-icon>mdi-toolbox</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title>Services</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item
+          link
+          @click="
+            $vuetify.goTo('#skills', {
+              duration: '1500',
+              easing: 'easeInOutQuad',
+            })
+          "
+        >
+          <v-list-item-icon>
+            <v-icon>mdi-head-check</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title>Skills</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item
+          link
+          @click="
+            $vuetify.goTo('#portfolio', {
+              duration: '1500',
+              easing: 'easeInOutQuad',
+            })
+          "
+        >
+          <v-list-item-icon>
+            <v-icon>mdi-barley</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title>Portfolio</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item
+          link
+          @click="
+            $vuetify.goTo('#contact', {
+              duration: '1500',
+              easing: 'easeInOutQuad',
+            })
+          "
+        >
+          <v-list-item-icon>
+            <v-icon>mdi-message-text</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title>Contact</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
+
+    <v-main>
+      <about ref="about" id="about" />
+
+      <v-container fluid class="dropd">
+        <services ref="services" id="services" />
+
+        <skills ref="skills" id="skills" />
+
+        <portfolio ref="portfolio" id="portfolio" />
+
+        <contact ref="contact" id="contact" />
+      </v-container>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-  import home from './views/home';
-
+  import about from "./components/about";
+  import Contact from "./components/contact.vue";
+  import Portfolio from "./components/portfolio.vue";
+  import services from "./components/services.vue";
+  import Skills from "./components/skills.vue";
   export default {
     name: "App",
-    components: {
-      home,
-    },
-    data: () => ({
-      //
-    }),
+    components: { about, services, Skills, Portfolio, Contact },
+    props: {},
+    methods: {},
   };
 </script>
+
+<style lang="sass" scoped>
+  .dropd
+    background: url('./assets/blues-lee-zUsvn51N2Ro-unsplash.jpg') no-repeat
+    background-size: cover
+    height: 400vh
+</style>
+
+<style lang="scss">
+  @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+  $font-family: "Raleway", sans-serif;
+  .my-application {
+    .headline,
+    [class*="display-"],
+    [class*="text-"] {
+      font-family: $font-family, sans-serif !important;
+    }
+    font-family: $font-family, sans-serif !important;
+  }
+</style>

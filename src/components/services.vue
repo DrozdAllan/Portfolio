@@ -1,6 +1,6 @@
 <template>
-  <v-parallax dark src="../assets/servicesMedium.jpg" height="1000">
-    <div class="titre">
+  <v-container>
+    <div class="text-h2 white--text">
       What I can do for you
     </div>
     <v-col cols="12" sm="6">
@@ -29,7 +29,7 @@
       </v-expansion-panels>
       </v-item-group>
     </v-col>
-  </v-parallax>
+  </v-container>
 </template>
 
 <script>
@@ -39,11 +39,6 @@
 </script>
 
 <style lang="sass" scoped>
-  .titre
-    color: rgb(55, 134, 97)
-    font-size: 45px
-    padding-left: 10%
-    margin-top: 0
   .bob
     color: rgb(8,8,8)
 </style>

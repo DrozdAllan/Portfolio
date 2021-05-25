@@ -1,6 +1,6 @@
 <template>
-  <v-parallax dark src="../assets/skillsMedium.jpg" height="1000">
-    <div class="titre">
+  <v-container class="white--text">
+    <div class="text-h2">
       What I know
     </div>
     <v-flex>
@@ -12,7 +12,7 @@
               HTML
             </v-col>
             <v-col>
-              <v-rating color="rgb(55,134,97)" value="4"> </v-rating>
+              <v-rating readonly color="rgb(55,134,97)" :value="4"> </v-rating>
             </v-col>
           </v-row>
           <v-row>
@@ -20,7 +20,7 @@
               CSS
             </v-col>
             <v-col>
-              <v-rating color="rgb(55,134,97)" value="3"> </v-rating>
+              <v-rating readonly color="rgb(55,134,97)" :value="3"> </v-rating>
             </v-col>
           </v-row>
           <v-row>
@@ -28,7 +28,7 @@
               jQuery
             </v-col>
             <v-col>
-              <v-rating color="rgb(55,134,97)" value="4"> </v-rating>
+              <v-rating readonly color="rgb(55,134,97)" :value="4"> </v-rating>
             </v-col>
           </v-row>
           <v-row>
@@ -36,7 +36,7 @@
               PHP
             </v-col>
             <v-col>
-              <v-rating color="rgb(55,134,97)" value="4"> </v-rating>
+              <v-rating readonly color="rgb(55,134,97)" :value="4"> </v-rating>
             </v-col>
           </v-row>
         </div>
@@ -49,7 +49,7 @@
               Photoshop
             </v-col>
             <v-col>
-              <v-rating color="rgb(55,134,97)" value="2"> </v-rating>
+              <v-rating readonly color="rgb(55,134,97)" :value="2"> </v-rating>
             </v-col>
           </v-row>
           <v-row>
@@ -57,13 +57,13 @@
               Japanese
             </v-col>
             <v-col>
-              <v-rating color="rgb(55,134,97)" value="2"> </v-rating>
+              <v-rating readonly color="rgb(55,134,97)" :value="2"> </v-rating>
             </v-col>
           </v-row>
         </div>
       </div>
     </v-flex>
-  </v-parallax>
+  </v-container>
 </template>
 
 <script>
@@ -71,7 +71,4 @@
 </script>
 
 <style lang="sass" scoped>
-  .titre
-    color: rgb(55, 134, 97)
-    font-size: 45px
 </style>
