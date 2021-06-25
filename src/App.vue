@@ -1,5 +1,5 @@
 <template>
-  <v-app class="my-application">
+  <v-app>
     <v-navigation-drawer app dark color="noir">
       <v-list>
         <div class="text-center">
@@ -101,6 +101,12 @@
           </v-list-item-content>
         </v-list-item>
       </v-list>
+      <v-btn>
+        FR
+      </v-btn>
+      <v-btn>
+        EN
+      </v-btn>
     </v-navigation-drawer>
 
     <v-main>
@@ -143,12 +149,14 @@
 <style lang="scss">
   @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
   $font-family: "Raleway", sans-serif;
-  .my-application {
-    .headline,
+  .v-application {
+    // Pour le général
+    font-family: $font-family;
+
+    // Pour englober toutes les classes de vuetify
     [class*="display-"],
     [class*="text-"] {
-      font-family: $font-family, sans-serif !important;
+      font-family: $font-family !important;
     }
-    font-family: $font-family, sans-serif !important;
   }
 </style>

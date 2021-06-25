@@ -13,6 +13,16 @@
         <div class="text-h2 white--text">
           Who I am
         </div>
+      </v-col>
+    </v-row>
+    <!-- MDR VIRE MOI CETTE MERDE EN DESSOUS -->
+    <v-row>
+      <v-col>
+        <v-spacer class="py-16 my-16" />
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col>
         <p class="text-center">
           I am a Symfony and Vue developer<br />
           I also like to play with Vuetify<br />
