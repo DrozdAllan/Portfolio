@@ -1,31 +1,36 @@
 <template>
-  <v-container>
+  <v-container class="py-16 my-16">
     <div class="text-h2 white--text">
-      What I can do for you
+      {{ $t("what") }}
     </div>
     <v-col cols="12" sm="6">
       <v-item-group dark>
-      <v-expansion-panels inset class="bob">
-        <v-expansion-panel>
-          <v-expansion-panel-header>Web Development</v-expansion-panel-header>
-          <v-expansion-panel-content>
-            I am focused on small to medium sized projects, depending on your needs and time.
-            I am able to start a project from scratch or renewing your older configuration on some technologies.
-          </v-expansion-panel-content>
-        </v-expansion-panel>
-        <v-expansion-panel>
-          <v-expansion-panel-header>Deployment</v-expansion-panel-header>
-          <v-expansion-panel-content>
-            I am used to Firebase, Netlify and Heroku solutions to provide the best money/efficiency ratio but I have also experimented webhosting with FTP use.
-          </v-expansion-panel-content>
-        </v-expansion-panel>
-        <v-expansion-panel>
-          <v-expansion-panel-header>Design</v-expansion-panel-header>
-          <v-expansion-panel-content>
-            Inspired by UI/UX design agencies, I prototype my websites with the use of Figma. I try my best to implement latest trend design to provide quick and beautiful looking webpages.
-          </v-expansion-panel-content>
-        </v-expansion-panel>
-      </v-expansion-panels>
+        <v-expansion-panels inset class="bob">
+          <v-expansion-panel>
+            <v-expansion-panel-header>{{
+              $t("what1")
+            }}</v-expansion-panel-header>
+            <v-expansion-panel-content>
+              {{ $t("whatText1") }}
+            </v-expansion-panel-content>
+          </v-expansion-panel>
+          <v-expansion-panel>
+            <v-expansion-panel-header>{{
+              $t("what2")
+            }}</v-expansion-panel-header>
+            <v-expansion-panel-content>
+              {{ $t("whatText2") }}
+            </v-expansion-panel-content>
+          </v-expansion-panel>
+          <v-expansion-panel>
+            <v-expansion-panel-header>{{
+              $t("what3")
+            }}</v-expansion-panel-header>
+            <v-expansion-panel-content>
+              {{ $t("whatText3") }}
+            </v-expansion-panel-content>
+          </v-expansion-panel>
+        </v-expansion-panels>
       </v-item-group>
     </v-col>
   </v-container>

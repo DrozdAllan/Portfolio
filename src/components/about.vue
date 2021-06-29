@@ -8,17 +8,17 @@
             icon
             color="white"
             class="hidden-sm-and-up"
-            @click="changeLocale()"
+            @click="$emit('toggle-drawer')"
             ><v-icon>mdi-chevron-left</v-icon></v-btn
           >
-          Web Developer
+          {{ $t("title") }}
         </div>
       </v-col>
     </v-row>
     <v-row>
       <v-col>
         <div class="text-h2 white--text">
-          Who I am
+          {{ $t("who") }}
         </div>
       </v-col>
     </v-row>
@@ -31,9 +31,9 @@
     <v-row>
       <v-col>
         <p class="text-center">
-          I am a Symfony and Vue developer<br />
-          I also like to play with Vuetify<br />
-          Welcome to my page<br />
+          {{ $t("talk1") }}<br />
+          {{ $t("talk2") }}<br />
+          {{ $t("talk3") }}<br />
         </p>
       </v-col>
     </v-row>
@@ -46,17 +46,12 @@
     data() {
       return {};
     },
-    methods: {
-      changeLocale() {
-        this.$vuetify.lang.current = "zhHans";
-      },
-    },
   };
 </script>
 
 <style lang="sass" scoped>
   .about-hero
-    background: url('../assets/bruno-thethe-g1GFWk_y8SA-unsplash.jpg') no-repeat
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), 99%, rgba(0, 0, 0, 1)), url('../assets/bruno-thethe-g1GFWk_y8SA-unsplash.jpg')
     background-size: cover
     height: 100vh
 </style>

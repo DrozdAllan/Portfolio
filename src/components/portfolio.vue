@@ -1,7 +1,7 @@
 <template>
-  <v-container>
+  <v-container class="py-16 my-16">
     <div class="text-h2 white--text">
-      What I've done
+      {{ $t("done") }}
     </div>
   </v-container>
 </template>
@@ -10,5 +10,4 @@
   export default {};
 </script>
 
-<style lang="sass" scoped>
-</style>
+<style lang="sass" scoped></style>
