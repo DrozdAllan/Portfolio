@@ -4,6 +4,13 @@
       <v-col class="text-h3 text-md-h2 text-right">
         <div>Allan Drozd</div>
         <div>
+          <v-btn
+            icon
+            color="white"
+            class="hidden-sm-and-up"
+            @click="changeLocale()"
+            ><v-icon>mdi-chevron-left</v-icon></v-btn
+          >
           Web Developer
         </div>
       </v-col>
@@ -38,6 +45,11 @@
     name: "about",
     data() {
       return {};
+    },
+    methods: {
+      changeLocale() {
+        this.$vuetify.lang.current = "zhHans";
+      },
     },
   };
 </script>

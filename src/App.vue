@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-navigation-drawer app dark color="noir">
+    <v-navigation-drawer permanent app dark color="noir" v-model="drawer">
       <v-list>
         <div class="text-center">
           <v-avatar color="bleu" size="90">
@@ -100,17 +100,20 @@
             <v-list-item-title>Contact</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+
+        <v-list-item class="align-end justify-center">
+          <v-btn>
+            FR
+          </v-btn>
+          <v-btn>
+            EN
+          </v-btn>
+        </v-list-item>
       </v-list>
-      <v-btn>
-        FR
-      </v-btn>
-      <v-btn>
-        EN
-      </v-btn>
     </v-navigation-drawer>
 
     <v-main>
-      <about ref="about" id="about" />
+      <about ref="about" id="about" @toggle-drawer="toggleDrawer()" />
 
       <v-container fluid class="dropd">
         <services ref="services" id="services" />
@@ -135,7 +138,16 @@
     name: "App",
     components: { about, services, Skills, Portfolio, Contact },
     props: {},
-    methods: {},
+    data() {
+      return {
+        drawer: false,
+      };
+    },
+    methods: {
+      toggleDrawer() {
+        this.drawer = !this.drawer;
+      },
+    },
   };
 </script>
 
