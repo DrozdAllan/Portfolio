@@ -1,36 +1,42 @@
 <template>
   <v-container fluid class="about-hero white--text">
-    <v-row>
-      <v-col class="text-h3 text-md-h2 text-right">
-        <div>Allan Drozd</div>
-        <div>
-          <v-btn
-            icon
-            color="white"
-            class="hidden-sm-and-up"
-            @click="$emit('toggle-drawer')"
-            ><v-icon>mdi-chevron-left</v-icon></v-btn
-          >
-          {{ $t("title") }}
-        </div>
+    <v-row class="ma-5">
+      <v-col cols="12" class="text-h3 text-md-h2 text-right">
+        Allan Drozd
+      </v-col>
+      <v-col cols="12" class="text-h4 text-md-h3 text-right">
+        {{ $t("title") }}
       </v-col>
     </v-row>
+
+    <v-row>
+      <v-col cols="12">
+        <v-btn
+          icon
+          x-large
+          color="white"
+          class="hidden-sm-and-up"
+          @click="$emit('toggle-drawer')"
+          ><v-icon>mdi-ray-end-arrow</v-icon></v-btn
+        >
+      </v-col>
+    </v-row>
+
+    <v-spacer class="py-16 my-3 my-md-16" />
+
     <v-row>
       <v-col>
-        <div class="text-h2 white--text">
+        <div class="mx-4 text-h4 white--text">
           {{ $t("who") }}
         </div>
       </v-col>
     </v-row>
-    <!-- MDR VIRE MOI CETTE MERDE EN DESSOUS -->
+
+    <v-spacer class="pb-16 mb-16 pb-md-4 mb-md-0" />
+
     <v-row>
       <v-col>
-        <v-spacer class="py-16 my-16" />
-      </v-col>
-    </v-row>
-    <v-row>
-      <v-col>
-        <p class="text-center">
+        <p class="text-center pr-16">
           {{ $t("talk1") }}<br />
           {{ $t("talk2") }}<br />
           {{ $t("talk3") }}<br />

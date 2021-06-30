@@ -1,6 +1,6 @@
 <template>
   <v-container class="py-16 my-16">
-    <div class="text-h2 white--text">
+    <div class="text-h4 white--text">
       {{ $t("done") }}
     </div>
   </v-container>

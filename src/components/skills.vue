@@ -1,6 +1,6 @@
 <template>
   <v-container class="white--text py-16 my-16">
-    <div class="text-h2 py-5">
+    <div class="text-h4 py-5">
       {{ $t("know") }}
     </div>
     <v-flex>

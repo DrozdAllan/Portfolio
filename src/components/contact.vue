@@ -1,11 +1,11 @@
 <template>
   <v-container class="py-16 my-16">
-    <div class="text-h2 white--text">
+    <div class="text-h4 white--text">
       {{ $t("talk") }}
     </div>
     <v-row class="my-10">
       <v-col>
-        <v-card>
+        <v-card color="noir" dark>
           <v-container>
             <v-row>
               <v-spacer cols="3" />
@@ -56,7 +56,6 @@
         valid: false,
         mail: "",
         message: "",
-        // , (v) => /.+@.+\..+/.test(v) || rule
       };
     },
     methods: {
