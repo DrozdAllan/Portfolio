@@ -1,11 +1,11 @@
 <template>
-  <v-container class="py-16 my-16">
-    <div class="text-h4 white--text">
+  <v-container class="pa-16 my-16">
+    <div class="text-h4 white--text py-16">
       {{ $t("what") }}
     </div>
     <v-col cols="12" sm="6">
       <v-item-group dark>
-        <v-expansion-panels inset >
+        <v-expansion-panels>
           <v-expansion-panel class="noir">
             <v-expansion-panel-header>{{
               $t("what1")

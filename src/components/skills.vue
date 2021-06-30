@@ -1,11 +1,11 @@
 <template>
-  <v-container class="white--text py-16 my-16">
-    <div class="text-h4 py-5">
+  <v-container class="white--text pa-16 my-16">
+    <div class="text-h4 py-5 py-16">
       {{ $t("know") }}
     </div>
     <v-flex>
       <div class="mb-4">
-        <h4>{{ $t("prog") }}</h4>
+        <span class="text-h6 font-weight-bold">{{ $t("prog") }}</span>
         <div class="py-5">
           <v-row>
             <v-col>
@@ -42,7 +42,7 @@
         </div>
       </div>
       <div class="mb-4">
-        <h4>Other</h4>
+        <span class="text-h6 font-weight-bold">{{ $t("other") }}</span>
         <div class="py-5">
           <v-row>
             <v-col>

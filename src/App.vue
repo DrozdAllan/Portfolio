@@ -115,7 +115,7 @@
     <v-main>
       <about ref="about" id="about" @toggle-drawer="toggleDrawer()" />
 
-      <v-container fluid class="dropd">
+      <v-container fluid class="dropd px-8">
         <services ref="services" id="services" />
 
         <skills ref="skills" id="skills" />
@@ -155,7 +155,7 @@
   .dropd
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), 1%, rgba(255, 255, 255, 0)), url('./assets/blues-lee-zUsvn51N2Ro-unsplash.jpg')
     background-size: cover
-    height: 400vh
+    height: 300vh
 </style>
 
 <style lang="scss">

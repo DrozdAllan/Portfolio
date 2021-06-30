@@ -1,5 +1,5 @@
 <template>
-  <v-container class="py-16 my-16">
+  <v-container class="pa-16 my-16">
     <div class="text-h4 white--text">
       {{ $t("talk") }}
     </div>

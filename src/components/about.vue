@@ -26,7 +26,7 @@
 
     <v-row>
       <v-col>
-        <div class="mx-4 text-h4 white--text">
+        <div class="mx-4 pl-16 text-h4 white--text">
           {{ $t("who") }}
         </div>
       </v-col>
@@ -36,7 +36,7 @@
 
     <v-row>
       <v-col>
-        <p class="text-center pr-16">
+        <p class="text-center pr-16 text-subtitle-1">
           {{ $t("talk1") }}<br />
           {{ $t("talk2") }}<br />
           {{ $t("talk3") }}<br />
