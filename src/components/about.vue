@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid class="about-hero white--text">
+  <v-container fluid class="about-hero">
     <v-row class="ma-5">
       <v-col cols="12" class="text-h3 text-md-h2 text-right">
         Allan Drozd
@@ -26,7 +26,7 @@
 
     <v-row>
       <v-col>
-        <div class="mx-4 pl-16 text-h4 white--text">
+        <div class="mx-4 pl-16 text-h4">
           {{ $t("who") }}
         </div>
       </v-col>

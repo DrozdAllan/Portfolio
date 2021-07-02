@@ -102,20 +102,20 @@
         </v-list-item>
 
         <v-list-item class="align-end justify-center">
-          <v-btn @click="$root.$i18n.locale = 'fr'">
-            FR
+          <v-btn elevation="0" color="noir" @click="$root.$i18n.locale = 'en'">
+            <v-icon x-large> $vuetify.icons.en </v-icon>
           </v-btn>
-          <v-btn @click="$root.$i18n.locale = 'en'">
-            EN
+          <v-btn elevation="0" color="noir" @click="$root.$i18n.locale = 'fr'">
+            <v-icon x-large>$vuetify.icons.fr</v-icon>
           </v-btn>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
 
-    <v-main>
+    <v-main class="white--text">
       <about ref="about" id="about" @toggle-drawer="toggleDrawer()" />
 
-      <v-container fluid class="dropd px-8">
+      <v-container fluid class="dropd px-0 px-md-8">
         <services ref="services" id="services" />
 
         <skills ref="skills" id="skills" />
@@ -123,6 +123,8 @@
         <portfolio ref="portfolio" id="portfolio" />
 
         <contact ref="contact" id="contact" />
+
+        <credits />
       </v-container>
     </v-main>
   </v-app>
@@ -131,13 +133,14 @@
 <script>
   import about from "./components/about";
   import Contact from "./components/contact.vue";
+  import Credits from "./components/credits.vue";
   import Portfolio from "./components/portfolio.vue";
   import services from "./components/services.vue";
   import Skills from "./components/skills.vue";
+
   export default {
     name: "App",
-    components: { about, services, Skills, Portfolio, Contact },
-    props: {},
+    components: { about, services, Skills, Portfolio, Contact, Credits },
     data() {
       return {
         drawer: false,
@@ -155,7 +158,6 @@
   .dropd
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), 1%, rgba(255, 255, 255, 0)), url('./assets/blues-lee-zUsvn51N2Ro-unsplash.jpg')
     background-size: cover
-    height: 300vh
 </style>
 
 <style lang="scss">

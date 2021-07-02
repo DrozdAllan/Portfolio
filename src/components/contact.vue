@@ -1,59 +1,62 @@
 <template>
-  <v-container class="pa-16 my-16">
-    <div class="text-h4 white--text">
+  <v-container class="pa-md-16 my-16">
+    <div class="text-h4 py-16">
       {{ $t("talk") }}
     </div>
-    <v-row class="my-10">
-      <v-col>
-        <v-card color="noir" dark>
-          <v-container>
-            <v-row>
-              <v-spacer cols="3" />
-              <v-col cols="6">
-                <v-form ref="contactForm" v-model="valid" lazy-validation>
-                  {{ $t("mail") }}
-                  <v-text-field
-                    v-model="mail"
-                    :rules="mailRules($t('mailRule'), $t('mailRule2'))"
-                    required
-                    outlined
-                    color="rose"
-                  />
+    <v-container class="text-center">
+      <v-row>
+        <v-col cols="12" class="col-sm-4">
+          <v-card shaped outlined color="noir" dark class="pa-5">
+            <v-form ref="contactForm" v-model="valid" lazy-validation>
+              {{ $t("mail") }}
+              <v-text-field
+                v-model="mail"
+                :rules="mailRules($t('mailRule'), $t('mailRule2'))"
+                required
+                outlined
+                color="rose"
+              />
 
-                  {{ $t("message") }}
-                  <v-textarea
-                    v-model="message"
-                    :rules="messageRules($t('messageRule'))"
-                    outlined
-                    color="rose"
-                  />
+              {{ $t("message") }}
+              <v-textarea
+                v-model="message"
+                :rules="messageRules($t('messageRule'))"
+                outlined
+                color="rose"
+              />
 
+              <v-tooltip v-model="show" bottom>
+                <template v-slot:activator="{ attrs }">
                   <v-btn
                     :disabled="!valid"
                     @click="sendMail"
                     color="rose"
                     dark
+                    v-bind="attrs"
                     >{{ $t("send") }}</v-btn
                   >
-                </v-form>
-              </v-col>
-              <v-spacer cols="3" />
-            </v-row>
-          </v-container>
-        </v-card>
-      </v-col>
-      <v-spacer />
-    </v-row>
+                </template>
+                <v-col>
+                  <span> {{ $t("sent") }} </span>
+                </v-col>
+              </v-tooltip>
+            </v-form>
+          </v-card>
+        </v-col>
+        <v-spacer class="hidden-sm-and-up" />
+      </v-row>
+    </v-container>
   </v-container>
 </template>
 
 <script>
-  import { mailCollection } from "./about.vue";
+  import { messagesCollection } from "../firebase/";
 
   export default {
     data() {
       return {
         valid: false,
+        show: false,
         mail: "",
         message: "",
       };
@@ -69,28 +72,17 @@
       },
       sendMail() {
         if (this.$refs.contactForm.validate()) {
-          mailCollection
+          messagesCollection
             .add({
-              toUids: ["D9D16fltcfUMPj4PP4nHONXSZvk2"],
-              message: {
-                subject: "mail de Contact de Lanya",
-                html:
-                  "<p>Provenant de : " +
-                  this.mail +
-                  "</p><br> Message : " +
-                  this.message,
-              },
+              mail: this.mail,
+              message: this.message,
             })
             .then(() => {
-              console.log("Queued email for delivery");
-              this.$store.commit("toggleContactDialog");
-              this.$store.commit("setSnackbarMessage", "Message envoyé !");
-              this.$store.commit("setSnackbarStatus", true);
+              this.show = true;
+              this.$refs.contactForm.reset();
             });
         }
       },
     },
   };
 </script>
-
-<style lang="sass" scoped></style>

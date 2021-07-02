@@ -22,6 +22,7 @@
   "mail": "Your mail",
   "message": "Your message",
   "send": "Send message",
+  "sent": "Message sent !",
   "mailRule": "Mail required",
   "mailRule2": "Invalid mail format",
   "messageRule": "Message required"
