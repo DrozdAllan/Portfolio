@@ -23,6 +23,7 @@ export default new Vuetify({
     themes: {
       light: {
         bleu: "#0724CC",
+        completion: "#CC9D06",
         noir: "#272E45",
       },
     },

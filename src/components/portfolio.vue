@@ -12,17 +12,22 @@
 
       <v-tabs-items v-model="tab">
         <v-tab-item key="1">
-          <v-card color="white" flat>
-            <v-card-text>Fleeting is a Symfony based project with the use of mon cul</v-card-text>
+          <v-card color="noir" dark flat>
+            <v-card-text
+              >Fleeting is a Symfony based project with the use of mon
+              cul</v-card-text
+            >
           </v-card>
         </v-tab-item>
         <v-tab-item key="2">
-          <v-card color="white" flat>
-            <v-card-text>Lanya is based on Vue 2 and Firebase running behind</v-card-text>
+          <v-card color="noir" dark flat>
+            <v-card-text
+              >Lanya is based on Vue 2 and Firebase running behind</v-card-text
+            >
           </v-card>
         </v-tab-item>
         <v-tab-item key="3">
-          <v-card color="white" flat>
+          <v-card color="noir" dark flat>
             <v-card-text>three</v-card-text>
           </v-card>
         </v-tab-item>

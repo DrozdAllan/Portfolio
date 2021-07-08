@@ -12,7 +12,7 @@
               HTML
             </v-col>
             <v-col>
-              <v-rating readonly color="rgb(55,134,97)" :value="4"> </v-rating>
+              <v-rating readonly color="completion" :value="4"> </v-rating>
             </v-col>
           </v-row>
           <v-row>
@@ -20,7 +20,7 @@
               CSS
             </v-col>
             <v-col>
-              <v-rating readonly color="rgb(55,134,97)" :value="3"> </v-rating>
+              <v-rating readonly color="completion" :value="3"> </v-rating>
             </v-col>
           </v-row>
           <v-row>
@@ -28,7 +28,7 @@
               jQuery
             </v-col>
             <v-col>
-              <v-rating readonly color="rgb(55,134,97)" :value="4"> </v-rating>
+              <v-rating readonly color="completion" :value="4"> </v-rating>
             </v-col>
           </v-row>
           <v-row>
@@ -36,7 +36,7 @@
               PHP
             </v-col>
             <v-col>
-              <v-rating readonly color="rgb(55,134,97)" :value="4"> </v-rating>
+              <v-rating readonly color="completion" :value="4"> </v-rating>
             </v-col>
           </v-row>
         </div>
@@ -49,7 +49,7 @@
               Photoshop
             </v-col>
             <v-col>
-              <v-rating readonly color="rgb(55,134,97)" :value="2"> </v-rating>
+              <v-rating readonly color="completion" :value="2"> </v-rating>
             </v-col>
           </v-row>
           <v-row>
@@ -57,7 +57,7 @@
               {{ $t("jap") }}
             </v-col>
             <v-col>
-              <v-rating readonly color="rgb(55,134,97)" :value="2"> </v-rating>
+              <v-rating readonly color="completion" :value="2"> </v-rating>
             </v-col>
           </v-row>
         </div>
