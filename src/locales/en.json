@@ -10,9 +10,9 @@
   "what1": "Web Development",
   "whatText1": "I am focused on small to medium sized projects, depending on your needs and time. I am able to start a project from scratch or renewing your configuration on some technologies.",
   "what2": "Deployment",
-  "whatText2": "I am used to Firebase, Netlify and Heroku solutions to provide the best money/efficiency ratio but I have also experimented webhosting with FTP use.",
+  "whatText2": "I am used to Firebase, Netlify and Heroku solutions to provide the best money/efficiency ratio but I also have experimented webhosting with FTP use.",
   "what3": "Design",
-  "whatText3": "Inspired by UI/UX design trends, I prototype my websites with the use of Figma. I try my best to implement latest trend design to provide quick and beautiful looking webpages.",
+  "whatText3": "Inspired by UI/UX design trends, I prototype my websites with Figma. I try my best to implement latest trend design to provide quick and beautiful looking webpages.",
   "know": "What I know",
   "prog": "Programming",
   "other": "Other",
@@ -25,5 +25,8 @@
   "sent": "Message sent !",
   "mailRule": "Mail required",
   "mailRule2": "Invalid mail format",
-  "messageRule": "Message required"
+  "messageRule": "Message required",
+  "lanya": "Lanya is a website based on a typical e-shop layout, using the powerful tools provided by firebase and combined with Vue 2 to make a single page application. Link available soon",
+  "multitasky": "Mültitaskÿ is a little project I did to test some Vuetify components and the Vue Leaflet module to manipulate maps. Available",
+  "fleeting": "Fleeting was a big Symfony project that has been unfortunately canceled. Highly filtered registration, 1 to 1 messaging, one time payment and subscription. The unfinished design was made with Bootstrap 4.6"
 }

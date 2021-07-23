@@ -10,14 +10,15 @@
             <span class="text-h4">Allan Drozd</span>
             <v-list-item-subtitle class="text-h5">{{
               $t("title")
-            }}</v-list-item-subtitle>
+              }}
+            </v-list-item-subtitle>
           </v-list-item-title>
         </div>
         <v-divider></v-divider>
 
         <v-list-item
-          link
-          @click="
+                link
+                @click="
             $vuetify.goTo('#about', {
               duration: '1500',
               easing: 'easeInOutQuad',
@@ -33,8 +34,8 @@
           </v-list-item-content>
         </v-list-item>
         <v-list-item
-          link
-          @click="
+                link
+                @click="
             $vuetify.goTo('#services', {
               duration: '1500',
               easing: 'easeInOutQuad',
@@ -50,8 +51,8 @@
           </v-list-item-content>
         </v-list-item>
         <v-list-item
-          link
-          @click="
+                link
+                @click="
             $vuetify.goTo('#skills', {
               duration: '1500',
               easing: 'easeInOutQuad',
@@ -67,8 +68,8 @@
           </v-list-item-content>
         </v-list-item>
         <v-list-item
-          link
-          @click="
+                link
+                @click="
             $vuetify.goTo('#portfolio', {
               duration: '1500',
               easing: 'easeInOutQuad',
@@ -84,8 +85,8 @@
           </v-list-item-content>
         </v-list-item>
         <v-list-item
-          link
-          @click="
+                link
+                @click="
             $vuetify.goTo('#contact', {
               duration: '1500',
               easing: 'easeInOutQuad',
@@ -103,55 +104,67 @@
 
         <v-list-item class="align-end justify-center">
           <v-btn elevation="0" color="noir" @click="$root.$i18n.locale = 'en'">
-            <v-icon x-large> $vuetify.icons.en </v-icon>
+            <v-icon x-large> $vuetify.icons.en</v-icon>
           </v-btn>
           <v-btn elevation="0" color="noir" @click="$root.$i18n.locale = 'fr'">
             <v-icon x-large>$vuetify.icons.fr</v-icon>
+          </v-btn>
+        </v-list-item>
+
+        <v-list-item class="align-end justify-center">
+          <v-btn elevation="0" color="noir" @click="toggleColor()">
+            <v-icon v-if="clearerColor"> mdi-weather-night</v-icon>
+            <v-icon v-else> mdi-white-balance-sunny</v-icon>
           </v-btn>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
 
     <v-main class="white--text">
-      <about ref="about" id="about" @toggle-drawer="toggleDrawer()" />
+      <about ref="about" id="about" @toggle-drawer="toggleDrawer()"/>
 
       <v-container fluid class="dropd px-0 px-md-8">
-        <services ref="services" id="services" />
+        <services ref="services" id="services"/>
 
-        <skills ref="skills" id="skills" />
+        <skills ref="skills" id="skills"/>
 
-        <portfolio ref="portfolio" id="portfolio" />
+        <portfolio ref="portfolio" id="portfolio"/>
 
-        <contact ref="contact" id="contact" />
+        <contact ref="contact" id="contact"/>
 
-        <credits />
+        <credits/>
       </v-container>
     </v-main>
   </v-app>
 </template>
 
 <script>
-  import about from "./components/about";
-  import Contact from "./components/contact.vue";
-  import Credits from "./components/credits.vue";
-  import Portfolio from "./components/portfolio.vue";
-  import services from "./components/services.vue";
-  import Skills from "./components/skills.vue";
+	import about from "./components/about";
+	import Contact from "./components/contact.vue";
+	import Credits from "./components/credits.vue";
+	import Portfolio from "./components/portfolio.vue";
+	import services from "./components/services.vue";
+	import Skills from "./components/skills.vue";
 
-  export default {
-    name: "App",
-    components: { about, services, Skills, Portfolio, Contact, Credits },
-    data() {
-      return {
-        drawer: false,
-      };
-    },
-    methods: {
-      toggleDrawer() {
-        this.drawer = !this.drawer;
-      },
-    },
-  };
+	export default {
+		name: "App",
+		components: {about, services, Skills, Portfolio, Contact, Credits},
+		data() {
+			return {
+				drawer: true,
+				clearerColor: false,
+			};
+		},
+		methods: {
+			toggleDrawer() {
+				this.drawer = !this.drawer;
+			},
+			toggleColor() {
+				this.clearerColor = !this.clearerColor;
+				this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
+			}
+		},
+	};
 </script>
 
 <style lang="sass" scoped>
@@ -162,6 +175,7 @@
 
 <style lang="scss">
   @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+
   $font-family: "Raleway", sans-serif;
   .v-application {
     // Pour le général

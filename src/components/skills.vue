@@ -12,7 +12,7 @@
               HTML
             </v-col>
             <v-col>
-              <v-rating readonly color="completion" :value="4"> </v-rating>
+              <v-rating readonly color="completion" background-color="white" :value="4"> </v-rating>
             </v-col>
           </v-row>
           <v-row>
@@ -20,23 +20,23 @@
               CSS
             </v-col>
             <v-col>
-              <v-rating readonly color="completion" :value="3"> </v-rating>
+              <v-rating readonly color="completion" background-color="white" :value="3"> </v-rating>
             </v-col>
           </v-row>
           <v-row>
             <v-col>
-              jQuery
+              Vue (JS)
             </v-col>
             <v-col>
-              <v-rating readonly color="completion" :value="4"> </v-rating>
+              <v-rating readonly color="completion" background-color="white" :value="4"> </v-rating>
             </v-col>
           </v-row>
           <v-row>
             <v-col>
-              PHP
+              Symfony (PHP)
             </v-col>
             <v-col>
-              <v-rating readonly color="completion" :value="4"> </v-rating>
+              <v-rating half-increments readonly color="completion" background-color="white" :value="2.5"> </v-rating>
             </v-col>
           </v-row>
         </div>
@@ -46,10 +46,18 @@
         <div class="py-5">
           <v-row>
             <v-col>
+              Figma
+            </v-col>
+            <v-col>
+              <v-rating half-increments readonly color="completion" background-color="white" :value="3.5"> </v-rating>
+            </v-col>
+          </v-row>
+          <v-row>
+            <v-col>
               Photoshop
             </v-col>
             <v-col>
-              <v-rating readonly color="completion" :value="2"> </v-rating>
+              <v-rating readonly color="completion" background-color="white" :value="3"> </v-rating>
             </v-col>
           </v-row>
           <v-row>
@@ -57,7 +65,7 @@
               {{ $t("jap") }}
             </v-col>
             <v-col>
-              <v-rating readonly color="completion" :value="2"> </v-rating>
+              <v-rating half-increments readonly color="completion" background-color="white" :value="1.5"> </v-rating>
             </v-col>
           </v-row>
         </div>
