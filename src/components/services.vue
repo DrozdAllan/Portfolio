@@ -1,6 +1,6 @@
 <template>
-  <v-container class="pa-md-16 my-16">
-    <div class="text-h4 py-16">
+  <v-container class="pa-md-16 mb-16">
+    <div class="text-h4 mx-4 mx-md-0 py-16">
       {{ $t("what") }}
     </div>
     <v-col cols="12" sm="6">

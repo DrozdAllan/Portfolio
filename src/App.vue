@@ -121,7 +121,21 @@
     </v-navigation-drawer>
 
     <v-main class="white--text">
-      <about ref="about" id="about" @toggle-drawer="toggleDrawer()"/>
+      <v-btn
+              app
+              fixed
+              left
+              bottom
+              fab
+              small
+              color="noir"
+              class="hidden-sm-and-up mt-2"
+              @click="toggleDrawer()"
+      >
+        <v-icon color="white">mdi-ray-end-arrow</v-icon>
+      </v-btn>
+
+      <about ref="about" id="about"/>
 
       <v-container fluid class="dropd px-0 px-md-8">
         <services ref="services" id="services"/>

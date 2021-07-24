@@ -1,45 +1,32 @@
 <template>
   <v-container fluid class="about-hero">
-    <v-row class="ma-5">
-      <v-col cols="12" class="text-h3 text-md-h2 text-right">
+    <v-row class="ma-md-5">
+      <v-col cols="12" class="text-h3 text-md-h2 text-center text-md-right">
         Allan Drozd
       </v-col>
-      <v-col cols="12" class="text-h4 text-md-h3 text-right">
+      <v-col cols="12" class="text-h4 text-md-h3 text-center text-md-right">
         {{ $t("title") }}
       </v-col>
     </v-row>
 
-    <v-row>
-      <v-col cols="12">
-        <v-btn
-          icon
-          x-large
-          color="white"
-          class="hidden-sm-and-up"
-          @click="$emit('toggle-drawer')"
-          ><v-icon>mdi-ray-end-arrow</v-icon></v-btn
-        >
-      </v-col>
-    </v-row>
-
-    <v-spacer class="py-16 my-3 my-md-16" />
+    <v-spacer class="py-16 my-3 my-md-16"/>
 
     <v-row>
       <v-col>
-        <div class="mx-4 pl-16 text-h4">
+        <div class="mx-4 pl-md-16 text-h4">
           {{ $t("who") }}
         </div>
       </v-col>
     </v-row>
 
-    <v-spacer class="pb-16 mb-16 pb-md-4 mb-md-0" />
+    <v-spacer class="hidden-sm-and-down pb-16 mb-16 pb-md-4 mb-md-0"/>
 
     <v-row>
       <v-col>
-        <p class="text-center pr-16 text-subtitle-1">
-          {{ $t("talk1") }}<br />
-          {{ $t("talk2") }}<br />
-          {{ $t("talk3") }}<br />
+        <p class="text-center pr-md-16 pt-6 text-subtitle-1">
+          {{ $t("talk1") }}<br/>
+          {{ $t("talk2") }}<br/>
+          {{ $t("talk3") }}<br/>
         </p>
       </v-col>
     </v-row>
@@ -47,12 +34,12 @@
 </template>
 
 <script>
-  export default {
-    name: "about",
-    data() {
-      return {};
-    },
-  };
+	export default {
+		name: "about",
+		data() {
+			return {};
+		},
+	};
 </script>
 
 <style lang="sass" scoped>

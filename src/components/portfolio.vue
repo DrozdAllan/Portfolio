@@ -1,10 +1,10 @@
 <template>
   <v-container class="pa-md-16 my-16">
-    <div class="text-h4 py-16">
+    <div class="text-h4 mx-4 mx-md-0 py-16">
       {{ $t("done") }}
     </div>
-    <v-card>
-      <v-tabs color="red" dark background-color="noir" v-model="tab">
+    <v-card max-width="1000">
+      <v-tabs color="white" dark background-color="noir" v-model="tab">
         <v-tab key="1">Lanya</v-tab>
         <v-tab key="2">Mültitaskÿ</v-tab>
         <v-tab key="3">Fleeting</v-tab>
@@ -17,7 +17,7 @@
             <v-card-text
             > {{ $t('lanya') }}
             </v-card-text>
-            <v-carousel height="700">
+            <v-carousel :height="carouselHeight">
               <v-carousel-item
                       v-for="(item,i) in lanya"
                       :key="i"
@@ -30,9 +30,10 @@
         </v-tab-item>
         <v-tab-item key="2">
           <v-card color="noir" dark flat>
-            <v-card-text> {{ $t('multitasky') }} <a target="_blank" href="https://multitask-6285a.web.app/" class="font-weight-bold white--text">here</a>
+            <v-card-text> {{ $t('multitasky') }} <a target="_blank" href="https://multitask-6285a.web.app/"
+                                                    class="font-weight-bold white--text">Mültitaskÿ</a>
             </v-card-text>
-            <v-carousel height="700">
+            <v-carousel :height="carouselHeight">
               <v-carousel-item
                       v-for="(item,i) in portfolio"
                       :key="i"
@@ -48,7 +49,7 @@
             <v-card-text>
               {{ $t('fleeting') }}
             </v-card-text>
-            <v-carousel height="700">
+            <v-carousel :height="carouselHeight">
               <v-carousel-item
                       v-for="(item,i) in fleeting"
                       :key="i"
@@ -116,6 +117,15 @@
 				],
 			};
 		},
+		computed: {
+			carouselHeight() {
+				if (this.$vuetify.breakpoint.smAndDown) {
+					return 500
+				} else {
+					return 800
+				}
+			}
+		}
 	};
 </script>
 
