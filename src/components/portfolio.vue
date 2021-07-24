@@ -3,8 +3,8 @@
     <div class="text-h4 mx-4 mx-md-0 py-16">
       {{ $t("done") }}
     </div>
-    <v-card max-width="1000">
-      <v-tabs color="white" dark background-color="noir" v-model="tab">
+    <v-card>
+      <v-tabs grow color="white" dark background-color="noir" v-model="tab">
         <v-tab key="1">Lanya</v-tab>
         <v-tab key="2">Mültitaskÿ</v-tab>
         <v-tab key="3">Fleeting</v-tab>
@@ -17,7 +17,7 @@
             <v-card-text
             > {{ $t('lanya') }}
             </v-card-text>
-            <v-carousel :height="carouselHeight">
+            <v-carousel height="auto">
               <v-carousel-item
                       v-for="(item,i) in lanya"
                       :key="i"

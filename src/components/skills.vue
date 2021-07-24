@@ -11,7 +11,7 @@
             <v-row>
               <v-col cols="12">
                 <v-icon :elevation="hover ? 12 : 2"
-                        :class="{ 'on-hover': hover }" size="75">$vuetify.icons.htmlIcon
+                        :class="{ 'on-hover': hover }" size="65">$vuetify.icons.htmlIcon
                 </v-icon>
               </v-col>
               <v-col cols="12">
@@ -25,7 +25,7 @@
             <v-row>
               <v-col cols="12">
                 <v-icon :elevation="hover ? 12 : 2"
-                        :class="{ 'on-hover': hover }" size="75">$vuetify.icons.cssIcon
+                        :class="{ 'on-hover': hover }" size="65">$vuetify.icons.cssIcon
                 </v-icon>
               </v-col>
               <v-col cols="12">
@@ -39,7 +39,7 @@
             <v-row>
               <v-col cols="12">
                 <v-icon :elevation="hover ? 12 : 2"
-                        :class="{ 'on-hover': hover }" size="75">$vuetify.icons.vueIcon
+                        :class="{ 'on-hover': hover }" size="65">$vuetify.icons.vueIcon
                 </v-icon>
               </v-col>
               <v-col cols="12">
@@ -53,7 +53,7 @@
             <v-row>
               <v-col cols="12">
                 <v-icon :elevation="hover ? 12 : 2"
-                        :class="{ 'on-hover': hover }" size="75">$vuetify.icons.symfonyIcon
+                        :class="{ 'on-hover': hover }" size="65">$vuetify.icons.symfonyIcon
                 </v-icon>
               </v-col>
               <v-col cols="12">
@@ -67,7 +67,7 @@
             <v-row>
               <v-col cols="12">
                 <v-icon :elevation="hover ? 12 : 2"
-                        :class="{ 'on-hover': hover }" size="75">$vuetify.icons.electronIcon
+                        :class="{ 'on-hover': hover }" size="65">$vuetify.icons.electronIcon
                 </v-icon>
               </v-col>
               <v-col cols="12">
@@ -81,7 +81,7 @@
             <v-row>
               <v-col cols="12">
                 <v-icon :elevation="hover ? 12 : 2"
-                        :class="{ 'on-hover': hover }" size="75">$vuetify.icons.firebaseIcon
+                        :class="{ 'on-hover': hover }" size="65">$vuetify.icons.firebaseIcon
                 </v-icon>
               </v-col>
               <v-col cols="12">
@@ -98,7 +98,7 @@
             <v-row>
               <v-col cols="12">
                 <v-icon :elevation="hover ? 12 : 2"
-                        :class="{ 'on-hover': hover }" size="75">$vuetify.icons.figmaIcon
+                        :class="{ 'on-hover': hover }" size="65">$vuetify.icons.figmaIcon
                 </v-icon>
               </v-col>
               <v-col cols="12">
@@ -112,7 +112,7 @@
             <v-row>
               <v-col cols="12">
                 <v-icon :elevation="hover ? 12 : 2"
-                        :class="{ 'on-hover': hover }" size="75">$vuetify.icons.photoshopIcon
+                        :class="{ 'on-hover': hover }" size="65">$vuetify.icons.photoshopIcon
                 </v-icon>
               </v-col>
               <v-col cols="12">
