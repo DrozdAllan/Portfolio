@@ -22,7 +22,7 @@
             $vuetify.goTo('#about', {
               duration: '1500',
               easing: 'easeInOutQuad',
-            })
+            }), drawer = false
           "
         >
           <v-list-item-icon>
@@ -39,7 +39,7 @@
             $vuetify.goTo('#services', {
               duration: '1500',
               easing: 'easeInOutQuad',
-            })
+            }), drawer = false
           "
         >
           <v-list-item-icon>
@@ -56,7 +56,7 @@
             $vuetify.goTo('#skills', {
               duration: '1500',
               easing: 'easeInOutQuad',
-            })
+            }), drawer = false
           "
         >
           <v-list-item-icon>
@@ -73,7 +73,7 @@
             $vuetify.goTo('#portfolio', {
               duration: '1500',
               easing: 'easeInOutQuad',
-            })
+            }), drawer = false
           "
         >
           <v-list-item-icon>
@@ -90,7 +90,7 @@
             $vuetify.goTo('#contact', {
               duration: '1500',
               easing: 'easeInOutQuad',
-            })
+            }), drawer = false
           "
         >
           <v-list-item-icon>

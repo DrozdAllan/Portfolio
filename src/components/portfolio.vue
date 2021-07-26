@@ -22,8 +22,8 @@
                       v-for="(item,i) in lanya"
                       :key="i"
                       :src="item.src"
-                      reverse-transition="fade-transition"
-                      transition="fade-transition"
+                      reverse-transition="none"
+                      transition="none"
               ></v-carousel-item>
             </v-carousel>
           </v-card>
@@ -33,7 +33,7 @@
             <v-card-text> {{ $t('multitasky') }} <a target="_blank" href="https://multitask-6285a.web.app/"
                                                     class="font-weight-bold white--text">Mültitaskÿ</a>
             </v-card-text>
-            <v-carousel :height="carouselHeight">
+            <v-carousel height="auto">
               <v-carousel-item
                       v-for="(item,i) in portfolio"
                       :key="i"
@@ -49,7 +49,7 @@
             <v-card-text>
               {{ $t('fleeting') }}
             </v-card-text>
-            <v-carousel :height="carouselHeight">
+            <v-carousel height="auto">
               <v-carousel-item
                       v-for="(item,i) in fleeting"
                       :key="i"
@@ -110,9 +110,6 @@
 					},
 					{
 						src: require('../assets/fleeting/Screenshot3.png'),
-					},
-					{
-						src: require('../assets/fleeting/Screenshot4.png'),
 					},
 				],
 			};
