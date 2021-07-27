@@ -18,14 +18,14 @@
             <v-card-text
             > {{ $t('lanya') }}
             </v-card-text>
-            <v-carousel hide-delimiters show-arrows-on-hover height="auto">
+            <v-carousel hide-delimiters show-arrows-on-hover :height="dynamicHeight">
 
               <v-carousel-item
                       v-for="(item,i) in lanya"
                       :key="i"
                       :src="item.src"
-                      reverse-transition="none"
-                      transition="none"
+                      reverse-transition="fade-transition"
+                      transition="fade-transition"
               ></v-carousel-item>
 
             </v-carousel>
@@ -36,9 +36,9 @@
             <v-card-text> {{ $t('multitasky') }} <a target="_blank" href="https://multitask-6285a.web.app/"
                                                     class="font-weight-bold white--text">Mültitaskÿ</a>
             </v-card-text>
-            <v-carousel hide-delimiters show-arrows-on-hover height="auto">
+            <v-carousel hide-delimiters show-arrows-on-hover :height="dynamicHeight">
               <v-carousel-item
-                      v-for="(item,i) in portfolio"
+                      v-for="(item,i) in multitask"
                       :key="i"
                       :src="item.src"
                       reverse-transition="fade-transition"
@@ -52,7 +52,7 @@
             <v-card-text>
               {{ $t('fleeting') }}
             </v-card-text>
-            <v-carousel hide-delimiters show-arrows-on-hover height="auto">
+            <v-carousel hide-delimiters show-arrows-on-hover :height="dynamicHeight">
               <v-carousel-item
                       v-for="(item,i) in fleeting"
                       :key="i"
@@ -74,7 +74,7 @@
 		data() {
 			return {
 				tab: null,
-				portfolio: [
+				multitask: [
 					{
 						src: require('../assets/multitask/Screenshot1.png'),
 					},
@@ -118,5 +118,20 @@
 				],
 			};
 		},
+		computed: {
+			dynamicHeight() {
+				if (this.$vuetify.breakpoint.smAndDown) {
+					return 175
+				} else {
+					return 800
+				}
+			}
+		}
 	};
 </script>
+
+<style>
+  .v-image__image--cover {
+    background-size: contain !important;
+  }
+</style>
