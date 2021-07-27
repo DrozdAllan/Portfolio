@@ -3,6 +3,7 @@
     <v-col class="text-h4 text-center text-md-left pb-16 mx-md-13">
       {{ $t("done") }}
     </v-col>
+
     <v-card>
       <v-tabs show-arrows center-active color="white" dark background-color="noir" v-model="tab">
         <v-tab key="1">Lanya</v-tab>
@@ -17,7 +18,8 @@
             <v-card-text
             > {{ $t('lanya') }}
             </v-card-text>
-            <v-carousel height="auto">
+            <v-carousel hide-delimiters show-arrows-on-hover height="auto">
+
               <v-carousel-item
                       v-for="(item,i) in lanya"
                       :key="i"
@@ -25,6 +27,7 @@
                       reverse-transition="none"
                       transition="none"
               ></v-carousel-item>
+
             </v-carousel>
           </v-card>
         </v-tab-item>
@@ -33,7 +36,7 @@
             <v-card-text> {{ $t('multitasky') }} <a target="_blank" href="https://multitask-6285a.web.app/"
                                                     class="font-weight-bold white--text">Mültitaskÿ</a>
             </v-card-text>
-            <v-carousel height="auto">
+            <v-carousel hide-delimiters show-arrows-on-hover height="auto">
               <v-carousel-item
                       v-for="(item,i) in portfolio"
                       :key="i"
@@ -49,7 +52,7 @@
             <v-card-text>
               {{ $t('fleeting') }}
             </v-card-text>
-            <v-carousel height="auto">
+            <v-carousel hide-delimiters show-arrows-on-hover height="auto">
               <v-carousel-item
                       v-for="(item,i) in fleeting"
                       :key="i"
@@ -66,6 +69,7 @@
 </template>
 
 <script>
+
 	export default {
 		data() {
 			return {
@@ -116,5 +120,3 @@
 		},
 	};
 </script>
-
-<style lang="sass" scoped></style>
