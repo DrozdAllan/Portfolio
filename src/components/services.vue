@@ -9,6 +9,11 @@
           <v-expansion-panel-header>{{
             $t("what1")
             }}
+            <template v-slot:actions>
+              <v-icon color="white">
+                $expand
+              </v-icon>
+            </template>
           </v-expansion-panel-header>
           <v-expansion-panel-content>
             {{ $t("whatText1") }}
@@ -18,6 +23,11 @@
           <v-expansion-panel-header>{{
             $t("what2")
             }}
+            <template v-slot:actions>
+              <v-icon color="white">
+                $expand
+              </v-icon>
+            </template>
           </v-expansion-panel-header>
           <v-expansion-panel-content>
             {{ $t("whatText2") }}
@@ -27,6 +37,11 @@
           <v-expansion-panel-header>{{
             $t("what3")
             }}
+            <template v-slot:actions>
+              <v-icon color="white">
+                $expand
+              </v-icon>
+            </template>
           </v-expansion-panel-header>
           <v-expansion-panel-content>
             {{ $t("whatText3") }}
