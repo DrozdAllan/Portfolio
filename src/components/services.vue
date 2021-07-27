@@ -4,37 +4,35 @@
       {{ $t("what") }}
     </v-col>
     <v-col cols="12" sm="6">
-      <v-item-group dark>
-        <v-expansion-panels inset v-model="panel">
-          <v-expansion-panel class="noir">
-            <v-expansion-panel-header>{{
-              $t("what1")
-              }}
-            </v-expansion-panel-header>
-            <v-expansion-panel-content>
-              {{ $t("whatText1") }}
-            </v-expansion-panel-content>
-          </v-expansion-panel>
-          <v-expansion-panel class="noir">
-            <v-expansion-panel-header>{{
-              $t("what2")
-              }}
-            </v-expansion-panel-header>
-            <v-expansion-panel-content>
-              {{ $t("whatText2") }}
-            </v-expansion-panel-content>
-          </v-expansion-panel>
-          <v-expansion-panel class="noir">
-            <v-expansion-panel-header>{{
-              $t("what3")
-              }}
-            </v-expansion-panel-header>
-            <v-expansion-panel-content>
-              {{ $t("whatText3") }}
-            </v-expansion-panel-content>
-          </v-expansion-panel>
-        </v-expansion-panels>
-      </v-item-group>
+      <v-expansion-panels v-model="panel">
+        <v-expansion-panel class="noir white--text">
+          <v-expansion-panel-header>{{
+            $t("what1")
+            }}
+          </v-expansion-panel-header>
+          <v-expansion-panel-content>
+            {{ $t("whatText1") }}
+          </v-expansion-panel-content>
+        </v-expansion-panel>
+        <v-expansion-panel class="noir white--text">
+          <v-expansion-panel-header>{{
+            $t("what2")
+            }}
+          </v-expansion-panel-header>
+          <v-expansion-panel-content>
+            {{ $t("whatText2") }}
+          </v-expansion-panel-content>
+        </v-expansion-panel>
+        <v-expansion-panel class="noir white--text">
+          <v-expansion-panel-header>{{
+            $t("what3")
+            }}
+          </v-expansion-panel-header>
+          <v-expansion-panel-content>
+            {{ $t("whatText3") }}
+          </v-expansion-panel-content>
+        </v-expansion-panel>
+      </v-expansion-panels>
     </v-col>
   </v-container>
 </template>
