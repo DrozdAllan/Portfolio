@@ -1,6 +1,6 @@
 <template>
-  <v-container class="py-md-16 mx-md-13 mb-16">
-    <v-col class="text-h4 text-center text-md-left pb-16">
+  <v-container class="py-md-16 mb-16">
+    <v-col class="text-h4 text-center text-md-left pb-16 mx-md-13">
       {{ $t("done") }}
     </v-col>
     <v-card>
@@ -114,15 +114,6 @@
 				],
 			};
 		},
-		computed: {
-			carouselHeight() {
-				if (this.$vuetify.breakpoint.smAndDown) {
-					return 500
-				} else {
-					return 800
-				}
-			}
-		}
 	};
 </script>
 

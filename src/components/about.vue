@@ -9,7 +9,7 @@
       </v-col>
     </v-row>
 
-    <v-spacer class="py-11 my-3 my-md-16"/>
+    <v-spacer class="py-16 my-3 my-md-16"/>
 
     <v-row>
       <v-col class="text-center text-md-left">
