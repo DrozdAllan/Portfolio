@@ -1,10 +1,10 @@
 <template>
-  <v-container class="pa-md-16 my-16">
-    <div class="text-h4 mx-4 mx-md-0 py-16">
+  <v-container class="py-md-16 mx-md-13 mb-16">
+    <v-col class="text-h4 text-center text-md-left pb-16">
       {{ $t("done") }}
-    </div>
+    </v-col>
     <v-card>
-      <v-tabs grow color="white" dark background-color="noir" v-model="tab">
+      <v-tabs show-arrows center-active color="white" dark background-color="noir" v-model="tab">
         <v-tab key="1">Lanya</v-tab>
         <v-tab key="2">Mültitaskÿ</v-tab>
         <v-tab key="3">Fleeting</v-tab>

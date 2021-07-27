@@ -18,13 +18,7 @@
 
         <v-list-item
                 link
-                @click="
-            $vuetify.goTo('#about', {
-              duration: '1500',
-              easing: 'easeInOutQuad',
-            }), drawer = false
-          "
-        >
+                @click="navigateTo('#about')">
           <v-list-item-icon>
             <v-icon>mdi-account-edit</v-icon>
           </v-list-item-icon>
@@ -35,13 +29,7 @@
         </v-list-item>
         <v-list-item
                 link
-                @click="
-            $vuetify.goTo('#services', {
-              duration: '1500',
-              easing: 'easeInOutQuad',
-            }), drawer = false
-          "
-        >
+                @click="navigateTo('#services')">
           <v-list-item-icon>
             <v-icon>mdi-toolbox</v-icon>
           </v-list-item-icon>
@@ -52,13 +40,7 @@
         </v-list-item>
         <v-list-item
                 link
-                @click="
-            $vuetify.goTo('#skills', {
-              duration: '1500',
-              easing: 'easeInOutQuad',
-            }), drawer = false
-          "
-        >
+                @click="navigateTo('#skills')">
           <v-list-item-icon>
             <v-icon>mdi-head-check</v-icon>
           </v-list-item-icon>
@@ -69,13 +51,7 @@
         </v-list-item>
         <v-list-item
                 link
-                @click="
-            $vuetify.goTo('#portfolio', {
-              duration: '1500',
-              easing: 'easeInOutQuad',
-            }), drawer = false
-          "
-        >
+                @click="navigateTo('#portfolio')">
           <v-list-item-icon>
             <v-icon>mdi-barley</v-icon>
           </v-list-item-icon>
@@ -86,13 +62,7 @@
         </v-list-item>
         <v-list-item
                 link
-                @click="
-            $vuetify.goTo('#contact', {
-              duration: '1500',
-              easing: 'easeInOutQuad',
-            }), drawer = false
-          "
-        >
+                @click="navigateTo('#contact')">
           <v-list-item-icon>
             <v-icon>mdi-message-text</v-icon>
           </v-list-item-icon>
@@ -137,7 +107,7 @@
 
       <about ref="about" id="about"/>
 
-      <v-container fluid class="dropd px-0 px-md-8">
+      <v-container fluid class="dropd pa-0">
         <services ref="services" id="services"/>
 
         <skills ref="skills" id="skills"/>
@@ -165,9 +135,17 @@
 		components: {about, services, Skills, Portfolio, Contact, Credits},
 		data() {
 			return {
-				drawer: true,
+				drawer: null,
 				clearerColor: false,
 			};
+		},
+		computed: {
+			drawerStatus() {
+				if (this.$vuetify.breakpoint.mobile) {
+					this.drawer = false;
+				}
+				return this.drawer;
+			}
 		},
 		methods: {
 			toggleDrawer() {
@@ -176,6 +154,15 @@
 			toggleColor() {
 				this.clearerColor = !this.clearerColor;
 				this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
+			},
+			navigateTo(location) {
+				this.$vuetify.goTo(location, {
+					duration: '1500',
+					easing: 'easeInOutQuad'
+				});
+				if (this.$vuetify.breakpoint.mobile) {
+					this.drawer = false;
+				}
 			}
 		},
 	};
@@ -183,8 +170,8 @@
 
 <style lang="sass" scoped>
   .dropd
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), 1%, rgba(255, 255, 255, 0)), url('./assets/blues-lee-zUsvn51N2Ro-unsplash.jpg')
-    background-size: cover
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0)), url('./assets/blues-lee-zUsvn51N2Ro-unsplash.jpg')
+    background-size: auto
 </style>
 
 <style lang="scss">

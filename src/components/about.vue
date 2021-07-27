@@ -9,11 +9,11 @@
       </v-col>
     </v-row>
 
-    <v-spacer class="py-16 my-3 my-md-16"/>
+    <v-spacer class="py-11 my-3 my-md-16"/>
 
     <v-row>
-      <v-col>
-        <div class="mx-4 pl-md-16 text-h4">
+      <v-col class="text-center text-md-left">
+        <div class="pl-md-16 text-h4">
           {{ $t("who") }}
         </div>
       </v-col>
@@ -44,7 +44,7 @@
 
 <style lang="sass" scoped>
   .about-hero
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), 99%, rgba(0, 0, 0, 1)), url('../assets/bruno-thethe-g1GFWk_y8SA-unsplash.jpg')
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 1)), url('../assets/bruno-thethe-g1GFWk_y8SA-unsplash.jpg')
     background-size: cover
     height: 100vh
 </style>

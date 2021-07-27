@@ -1,8 +1,8 @@
 <template>
-  <v-container class="pa-md-16 my-16">
-    <div class="text-h4 mx-4 mx-md-0 py-16">
+  <v-container class="py-md-16 mx-md-13 mb-16">
+    <v-col class="text-h4 text-center text-md-left pb-16">
       {{ $t("talk") }}
-    </div>
+    </v-col>
     <v-container class="text-center">
       <v-row>
         <v-col cols="12" class="col-sm-4">
