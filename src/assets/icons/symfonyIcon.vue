@@ -1,3 +1,3 @@
 <template>
-  <img src="./symfony_white_03.png" />
+  <img src="./symfony_white.png" />
 </template>

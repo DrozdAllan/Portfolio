@@ -5,44 +5,64 @@
     </v-col>
 
     <v-card>
-      <v-tabs show-arrows center-active color="white" dark background-color="noir" v-model="tab">
+      <v-tabs
+        show-arrows
+        center-active
+        color="white"
+        dark
+        background-color="noir"
+        v-model="tab"
+      >
         <v-tab key="1">Lanya</v-tab>
         <v-tab key="2">Mültitaskÿ</v-tab>
         <v-tab key="3">Fleeting</v-tab>
       </v-tabs>
 
       <v-tabs-items v-model="tab">
-
         <v-tab-item key="1">
           <v-card color="noir" dark flat>
-            <v-card-text
-            > {{ $t('lanya') }}
-            </v-card-text>
-            <v-carousel hide-delimiters show-arrows-on-hover :height="dynamicHeight">
-
+            <v-card-text> {{ $t("lanya") }} </v-card-text>
+            <v-carousel
+              continuous
+              cycle
+              interval="5000"
+              hide-delimiters
+              :show-arrows="false"
+              :height="dynamicHeight"
+            >
               <v-carousel-item
-                      v-for="(item,i) in lanya"
-                      :key="i"
-                      :src="item.src"
-                      reverse-transition="fade-transition"
-                      transition="fade-transition"
+                v-for="(item, i) in lanya"
+                :key="i"
+                :src="item.src"
+                transition="slide-y-reverse-transition"
               ></v-carousel-item>
-
             </v-carousel>
           </v-card>
         </v-tab-item>
         <v-tab-item key="2">
           <v-card color="noir" dark flat>
-            <v-card-text> {{ $t('multitasky') }} <a target="_blank" href="https://multitask-6285a.web.app/"
-                                                    class="font-weight-bold white--text">Mültitaskÿ</a>
+            <v-card-text>
+              {{ $t("multitasky") }}
+              <a
+                target="_blank"
+                href="https://multitask-6285a.web.app/"
+                class="font-weight-bold white--text"
+                >Mültitaskÿ</a
+              >
             </v-card-text>
-            <v-carousel hide-delimiters show-arrows-on-hover :height="dynamicHeight">
+            <v-carousel
+              continuous
+              cycle
+              interval="5000"
+              hide-delimiters
+              :show-arrows="false"
+              :height="dynamicHeight"
+            >
               <v-carousel-item
-                      v-for="(item,i) in multitask"
-                      :key="i"
-                      :src="item.src"
-                      reverse-transition="fade-transition"
-                      transition="fade-transition"
+                v-for="(item, i) in multitask"
+                :key="i"
+                :src="item.src"
+                transition="slide-y-reverse-transition"
               ></v-carousel-item>
             </v-carousel>
           </v-card>
@@ -50,15 +70,21 @@
         <v-tab-item key="3">
           <v-card color="noir" dark flat>
             <v-card-text>
-              {{ $t('fleeting') }}
+              {{ $t("fleeting") }}
             </v-card-text>
-            <v-carousel hide-delimiters show-arrows-on-hover :height="dynamicHeight">
+            <v-carousel
+              continuous
+              cycle
+              interval="5000"
+              hide-delimiters
+              :show-arrows="false"
+              :height="dynamicHeight"
+            >
               <v-carousel-item
-                      v-for="(item,i) in fleeting"
-                      :key="i"
-                      :src="item.src"
-                      reverse-transition="fade-transition"
-                      transition="fade-transition"
+                v-for="(item, i) in fleeting"
+                :key="i"
+                :src="item.src"
+                transition="slide-y-reverse-transition"
               ></v-carousel-item>
             </v-carousel>
           </v-card>
@@ -69,65 +95,64 @@
 </template>
 
 <script>
-
-	export default {
-		data() {
-			return {
-				tab: null,
-				multitask: [
-					{
-						src: require('../assets/multitask/Screenshot1.png'),
-					},
-					{
-						src: require('../assets/multitask/Screenshot2.png'),
-					},
-					{
-						src: require('../assets/multitask/Screenshot3.png'),
-					},
-				],
-				lanya: [
-					{
-						src: require('../assets/lanya/Screenshot1.png'),
-					},
-					{
-						src: require('../assets/lanya/Screenshot2.png'),
-					},
-					{
-						src: require('../assets/lanya/Screenshot3.png'),
-					},
-					{
-						src: require('../assets/lanya/Screenshot4.png'),
-					},
-					{
-						src: require('../assets/lanya/Screenshot5.png'),
-					},
-					{
-						src: require('../assets/lanya/Screenshot6.png'),
-					},
-				],
-				fleeting: [
-					{
-						src: require('../assets/fleeting/Screenshot1.png'),
-					},
-					{
-						src: require('../assets/fleeting/Screenshot2.png'),
-					},
-					{
-						src: require('../assets/fleeting/Screenshot3.png'),
-					},
-				],
-			};
-		},
-		computed: {
-			dynamicHeight() {
-				if (this.$vuetify.breakpoint.smAndDown) {
-					return 175
-				} else {
-					return 800
-				}
-			}
-		}
-	};
+  export default {
+    data() {
+      return {
+        tab: null,
+        multitask: [
+          {
+            src: require("../assets/multitask/Screenshot1.png"),
+          },
+          {
+            src: require("../assets/multitask/Screenshot2.png"),
+          },
+          {
+            src: require("../assets/multitask/Screenshot3.png"),
+          },
+        ],
+        lanya: [
+          {
+            src: require("../assets/lanya/Screenshot1.png"),
+          },
+          {
+            src: require("../assets/lanya/Screenshot2.png"),
+          },
+          {
+            src: require("../assets/lanya/Screenshot3.png"),
+          },
+          {
+            src: require("../assets/lanya/Screenshot4.png"),
+          },
+          {
+            src: require("../assets/lanya/Screenshot5.png"),
+          },
+          {
+            src: require("../assets/lanya/Screenshot6.png"),
+          },
+        ],
+        fleeting: [
+          {
+            src: require("../assets/fleeting/Screenshot1.png"),
+          },
+          {
+            src: require("../assets/fleeting/Screenshot2.png"),
+          },
+          {
+            src: require("../assets/fleeting/Screenshot3.png"),
+          },
+        ],
+      };
+    },
+    computed: {
+      dynamicHeight() {
+        if (this.$vuetify.breakpoint.smAndDown) {
+          return 175;
+        } else {
+          return 800;
+        }
+      },
+    },
+  };
 </script>
 
 <style>

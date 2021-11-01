@@ -1,3 +1,3 @@
 <template>
-  <img src="./css-3.png" />
+  <img src="./css3_128.png" />
 </template>
