@@ -5,7 +5,7 @@
     </v-col>
     <v-col cols="12" sm="6">
       <v-expansion-panels v-model="panel">
-        <v-expansion-panel class="noir white--text">
+        <v-expansion-panel class="main white--text">
           <v-expansion-panel-header
             >{{ $t("what0") }}
             <template v-slot:actions>
@@ -18,7 +18,7 @@
             {{ $t("whatText0") }}
           </v-expansion-panel-content>
         </v-expansion-panel>
-        <v-expansion-panel class="noir white--text">
+        <v-expansion-panel class="main white--text">
           <v-expansion-panel-header
             >{{ $t("what1") }}
             <template v-slot:actions>
@@ -31,7 +31,7 @@
             {{ $t("whatText1") }}
           </v-expansion-panel-content>
         </v-expansion-panel>
-        <v-expansion-panel class="noir white--text">
+        <v-expansion-panel class="main white--text">
           <v-expansion-panel-header
             >{{ $t("what2") }}
             <template v-slot:actions>
@@ -44,7 +44,7 @@
             {{ $t("whatText2") }}
           </v-expansion-panel-content>
         </v-expansion-panel>
-        <v-expansion-panel class="noir white--text">
+        <v-expansion-panel class="main white--text">
           <v-expansion-panel-header
             >{{ $t("what3") }}
             <template v-slot:actions>

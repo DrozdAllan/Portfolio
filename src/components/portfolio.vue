@@ -10,7 +10,7 @@
         center-active
         color="white"
         dark
-        background-color="noir"
+        background-color="main"
         v-model="tab"
       >
         <v-tab key="1">Lanya</v-tab>
@@ -20,7 +20,7 @@
 
       <v-tabs-items v-model="tab">
         <v-tab-item key="1">
-          <v-card color="noir" dark flat>
+          <v-card color="main" dark flat>
             <v-card-text> {{ $t("lanya") }} </v-card-text>
             <v-carousel
               continuous
@@ -34,13 +34,12 @@
                 v-for="(item, i) in lanya"
                 :key="i"
                 :src="item.src"
-                transition="slide-y-reverse-transition"
               ></v-carousel-item>
             </v-carousel>
           </v-card>
         </v-tab-item>
         <v-tab-item key="2">
-          <v-card color="noir" dark flat>
+          <v-card color="main" dark flat>
             <v-card-text>
               {{ $t("multitasky") }}
               <a
@@ -62,13 +61,12 @@
                 v-for="(item, i) in multitask"
                 :key="i"
                 :src="item.src"
-                transition="slide-y-reverse-transition"
               ></v-carousel-item>
             </v-carousel>
           </v-card>
         </v-tab-item>
         <v-tab-item key="3">
-          <v-card color="noir" dark flat>
+          <v-card color="main" dark flat>
             <v-card-text>
               {{ $t("fleeting") }}
             </v-card-text>
@@ -84,7 +82,6 @@
                 v-for="(item, i) in fleeting"
                 :key="i"
                 :src="item.src"
-                transition="slide-y-reverse-transition"
               ></v-carousel-item>
             </v-carousel>
           </v-card>
@@ -146,9 +143,9 @@
     computed: {
       dynamicHeight() {
         if (this.$vuetify.breakpoint.smAndDown) {
-          return 175;
+          return 200;
         } else {
-          return 800;
+          return 650;
         }
       },
     },

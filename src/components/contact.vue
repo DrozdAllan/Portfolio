@@ -6,7 +6,7 @@
     <v-container class="text-center">
       <v-row>
         <v-col cols="12" class="col-sm-4">
-          <v-card shaped outlined color="noir" dark class="pa-5">
+          <v-card shaped outlined color="main" dark class="pa-5">
             <v-form ref="contactForm" v-model="valid" lazy-validation>
               {{ $t("mail") }}
               <v-text-field
