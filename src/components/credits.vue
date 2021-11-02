@@ -1,7 +1,7 @@
 <template>
-  <v-container class="align-end">
+  <v-container class="align-end pt-14">
     <v-row>
-      <v-col cols="12" class="col-sm-4">
+      <v-col cols="12" md="6">
         <span class="text-caption animation-text-none"
           >Photos by Bruno Thethe and blues lee on
           <a
@@ -24,7 +24,7 @@
           ></span
         >
       </v-col>
-      <v-spacer class="hidden-sm-and-up" />
+      <v-spacer class="hidden-md-and-up" /> 
     </v-row>
   </v-container>
 </template>

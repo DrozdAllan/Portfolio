@@ -1,6 +1,6 @@
 <template>
-  <v-container class="py-md-16 mb-16">
-    <v-col class="text-h4 text-center text-md-left pb-16 mx-md-13">
+  <div class="py-14">
+    <v-col class="text-h4 text-center text-md-left pb-16">
       {{ $t("done") }}
     </v-col>
 
@@ -88,7 +88,7 @@
         </v-tab-item>
       </v-tabs-items>
     </v-card>
-  </v-container>
+  </div>
 </template>
 
 <script>
@@ -153,7 +153,7 @@
 </script>
 
 <style>
-  .v-image__image--cover {
+  /* .v-image__image--cover {
     background-size: contain !important;
-  }
+  } */
 </style>

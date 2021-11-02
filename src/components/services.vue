@@ -1,9 +1,9 @@
 <template>
-  <v-container class="py-md-16 mx-md-13 mb-16">
+  <div class="py-14">
     <v-col class="text-h4 text-center text-md-left pb-16">
       {{ $t("what") }}
     </v-col>
-    <v-col cols="12" sm="6">
+    <v-col cols="12" md="6">
       <v-expansion-panels v-model="panel">
         <v-expansion-panel class="main white--text">
           <v-expansion-panel-header
@@ -59,7 +59,7 @@
         </v-expansion-panel>
       </v-expansion-panels>
     </v-col>
-  </v-container>
+  </div>
 </template>
 
 <script>

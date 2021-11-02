@@ -5,7 +5,6 @@
         <div class="text-center">
           <v-avatar color="main" size="90">
             <img src="./assets/PortfolioLogoGabriola.png" />
-            <!-- <span class="text-h3">AD</span> -->
           </v-avatar>
           <v-list-item-title>
             <span class="text-h4">Allan Drozd</span>
@@ -89,7 +88,7 @@
         fab
         small
         color="main"
-        class="hidden-sm-and-up mt-2"
+        class="hidden-md-and-up mt-2"
         @click="toggleDrawer()"
       >
         <v-icon color="white">mdi-ray-end-arrow</v-icon>
@@ -97,7 +96,7 @@
 
       <about ref="about" id="about" />
 
-      <v-container fluid class="dropd pa-0">
+      <v-container fluid class="dropd py-14">
         <services ref="services" id="services" />
 
         <skills ref="skills" id="skills" />

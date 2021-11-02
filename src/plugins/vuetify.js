@@ -17,7 +17,7 @@ Vue.use(Vuetify);
 
 export default new Vuetify({
   breakpoint: {
-    mobileBreakpoint: "xs",
+    mobileBreakpoint: "sm",
   },
   icons: {
     values: {

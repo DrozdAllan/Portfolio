@@ -1,11 +1,11 @@
 <template>
-  <v-container class="py-md-16 mx-md-13 mb-16">
+  <div class="py-14">
     <v-col class="text-h4 text-center text-md-left pb-16">
       {{ $t("know") }}
     </v-col>
     <v-container>
       <span class="text-h6 font-weight-bold">{{ $t("prog") }}</span>
-      <v-row class="my-4 text-center">
+      <v-row class="py-12 text-center">
         <v-col>
           <v-hover v-slot="{ hover }">
             <v-row>
@@ -103,7 +103,7 @@
         </v-col>
       </v-row>
       <span class="text-h6 font-weight-bold">{{ $t("design") }}</span>
-      <v-row class="my-4 text-center">
+      <v-row class="py-12 text-center">
         <v-col>
           <v-hover v-slot="{ hover }">
             <v-row>
@@ -163,7 +163,7 @@
         </v-col>
       </v-row>
     </v-container>
-  </v-container>
+  </div>
 </template>
 
 <script>
