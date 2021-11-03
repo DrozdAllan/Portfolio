@@ -63,11 +63,11 @@ export default new Vuetify({
     themes: {
       light: {
         main: "#0061C2",
-        noir: "#272E45",
+        action: "#0ACFC9",
       },
       dark: {
         main: "#023E8A",
-        noir: "#4661AB",
+        action: "#0ACFC9",
       },
     },
   },

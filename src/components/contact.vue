@@ -30,7 +30,7 @@
                   <v-btn
                     :disabled="!valid"
                     @click="sendMail"
-                    color="rose"
+                    color="action"
                     dark
                     v-bind="attrs"
                     >{{ $t("send") }}

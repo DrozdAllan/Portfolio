@@ -8,7 +8,7 @@
         {{ $t("title") }}
       </v-col>
 
-      <v-col cols="12" class="text-center text-md-left pt-md-16">
+      <v-col cols="12" class="text-center text-md-left py-16">
         <div class="text-h4">
           {{ $t("who") }}
         </div>
