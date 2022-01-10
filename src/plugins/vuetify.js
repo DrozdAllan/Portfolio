@@ -12,6 +12,7 @@ import firebaseIcon from "@/assets/icons/firebaseIcon";
 import flutterIcon from "@/assets/icons/flutterIcon";
 import gimpIcon from "@/assets/icons/gimpIcon";
 import apiPlatformIcon from "@/assets/icons/apiPlatformIcon";
+import riveIcon from "@/assets/icons/riveIcon";
 
 Vue.use(Vuetify);
 
@@ -56,6 +57,9 @@ export default new Vuetify({
       },
       apiPlatformIcon: {
         component: apiPlatformIcon,
+      },
+      riveIcon: {
+        component: riveIcon,
       },
     },
   },

@@ -13,13 +13,33 @@
         background-color="main"
         v-model="tab"
       >
-        <v-tab key="1">Lanya</v-tab>
-        <v-tab key="2">Mültitaskÿ</v-tab>
-        <v-tab key="3">Fleeting</v-tab>
+        <v-tab key="1">My Next Game</v-tab>
+        <v-tab key="2">Lanya</v-tab>
+        <v-tab key="3">Mültitaskÿ</v-tab>
+        <v-tab key="4">Fleeting</v-tab>
       </v-tabs>
 
       <v-tabs-items v-model="tab">
         <v-tab-item key="1">
+          <v-card color="main" dark flat>
+            <v-card-text> {{ $t("mynextgame") }} </v-card-text>
+            <v-carousel
+              continuous
+              cycle
+              interval="5000"
+              hide-delimiters
+              :show-arrows="false"
+              :height="dynamicHeight"
+            >
+              <v-carousel-item
+                v-for="(item, i) in mynextgame"
+                :key="i"
+                :src="item.src"
+              ></v-carousel-item>
+            </v-carousel>
+          </v-card>
+        </v-tab-item>
+        <v-tab-item key="2">
           <v-card color="main" dark flat>
             <v-card-text> {{ $t("lanya") }} </v-card-text>
             <v-carousel
@@ -38,7 +58,7 @@
             </v-carousel>
           </v-card>
         </v-tab-item>
-        <v-tab-item key="2">
+        <v-tab-item key="3">
           <v-card color="main" dark flat>
             <v-card-text>
               {{ $t("multitasky") }}
@@ -65,7 +85,7 @@
             </v-carousel>
           </v-card>
         </v-tab-item>
-        <v-tab-item key="3">
+        <v-tab-item key="4">
           <v-card color="main" dark flat>
             <v-card-text>
               {{ $t("fleeting") }}
@@ -136,6 +156,11 @@
           },
           {
             src: require("../assets/fleeting/Screenshot3.png"),
+          },
+        ],
+        mynextgame: [
+          {
+            src: require("../assets/mynextgame/FeatureGraphic.png"),
           },
         ],
       };

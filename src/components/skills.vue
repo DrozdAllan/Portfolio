@@ -150,6 +150,25 @@
                   :elevation="hover ? 12 : 2"
                   :class="{ 'on-hover': hover }"
                   size="60"
+                  >$vuetify.icons.riveIcon
+                </v-icon>
+              </v-col>
+              <v-col cols="12">
+                <span :class="{ 'show-name': hover }" class="transparent--text"
+                  >Rive</span
+                >
+              </v-col>
+            </v-row>
+          </v-hover>
+        </v-col>
+        <v-col>
+          <v-hover v-slot="{ hover }">
+            <v-row>
+              <v-col>
+                <v-icon
+                  :elevation="hover ? 12 : 2"
+                  :class="{ 'on-hover': hover }"
+                  size="60"
                   >$vuetify.icons.photoshopIcon
                 </v-icon>
               </v-col>
