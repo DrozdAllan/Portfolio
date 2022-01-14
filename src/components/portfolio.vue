@@ -22,14 +22,23 @@
       <v-tabs-items v-model="tab">
         <v-tab-item key="1">
           <v-card color="main" dark flat>
-            <v-card-text> {{ $t("mynextgame") }} </v-card-text>
+            <v-card-text>
+              {{ $t("mynextgame") }}
+              <a
+                href="https://play.google.com/store/apps/details?id=com.allandrozd.my_next_game"
+                target="_blank"
+                class="font-weight-bold white--text"
+              >
+                My Next Game
+              </a>
+            </v-card-text>
             <v-carousel
               continuous
               cycle
               interval="5000"
               hide-delimiters
               :show-arrows="false"
-              :height="dynamicHeight"
+              :height="myNextGameDynamicHeight"
             >
               <v-carousel-item
                 v-for="(item, i) in mynextgame"
@@ -171,6 +180,17 @@
           return 200;
         } else {
           return 650;
+        }
+      },
+      myNextGameDynamicHeight() {
+        if (this.$vuetify.breakpoint.smAndDown) {
+          return 200;
+        } else if (this.$vuetify.breakpoint.lg) {
+          return 575;
+        } else if (this.$vuetify.breakpoint.xl) {
+          return 900;
+        } else {
+          return 375;
         }
       },
     },
