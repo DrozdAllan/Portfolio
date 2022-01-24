@@ -169,7 +169,7 @@
         ],
         mynextgame: [
           {
-            src: require("../assets/mynextgame/FeatureGraphic.png"),
+            src: require("../assets/mynextgame/AppPresentation.png"),
           },
         ],
       };
