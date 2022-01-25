@@ -22,12 +22,12 @@
       <v-tabs-items v-model="tab">
         <v-tab-item key="1">
           <v-card color="main" dark flat>
-            <v-card-text>
+            <v-card-text class="white--text">
               {{ $t("mynextgame") }}
               <a
                 href="https://play.google.com/store/apps/details?id=com.allandrozd.my_next_game"
                 target="_blank"
-                class="font-weight-bold white--text"
+                class="white--text"
               >
                 My Next Game
               </a>
@@ -50,7 +50,7 @@
         </v-tab-item>
         <v-tab-item key="2">
           <v-card color="main" dark flat>
-            <v-card-text> {{ $t("lanya") }} </v-card-text>
+            <v-card-text class="white--text"> {{ $t("lanya") }} </v-card-text>
             <v-carousel
               continuous
               cycle
@@ -69,12 +69,12 @@
         </v-tab-item>
         <v-tab-item key="3">
           <v-card color="main" dark flat>
-            <v-card-text>
+            <v-card-text class="white--text">
               {{ $t("multitasky") }}
               <a
                 target="_blank"
                 href="https://multitask-6285a.web.app/"
-                class="font-weight-bold white--text"
+                class="white--text"
                 >Mültitaskÿ</a
               >
             </v-card-text>
@@ -96,7 +96,7 @@
         </v-tab-item>
         <v-tab-item key="4">
           <v-card color="main" dark flat>
-            <v-card-text>
+            <v-card-text class="white--text">
               {{ $t("fleeting") }}
             </v-card-text>
             <v-carousel

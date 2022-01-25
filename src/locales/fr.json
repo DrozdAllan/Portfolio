@@ -8,7 +8,7 @@
   "talk3": "Bienvenue sur ma page",
   "what": "Ce que je peux faire pour vous",
   "what0": "Développement Mobile",
-  "whatText0": "Je suis tombé amoureux de Flutter vers mi-2021, et depuis je veux me spécifier dans le développement mobile, pour l'instant je ne l'utilise que pour développer des applications Android, mon but étant de publier une application à la fois pour Android & iOS.",
+  "whatText0": "Je me suis intéressé à Flutter mi-2021, depuis je me concentre sur le développement mobile. Pour l'instant je l'utilise pour développer des applications Android uniquement.",
   "what1": "Développement Web",
   "whatText1": "Je suis intéressé par les projets de petite et moyenne taille, en fonction de vos besoins et votre temps. Je suis capable de commencer un projet de zéro ou de renouveler votre configuration sur certaines technologies.",
   "what2": "Déploiement",
@@ -28,7 +28,7 @@
   "mailRule": "Mail requis",
   "mailRule2": "Format de mail invalide",
   "messageRule": "Message requis",
-  "mynextgame": "My Next Game est une application Android où l'utilisateur peut obtenir un titre et la couverture d'un jeu vidéo soit en répondant à 4 questions soit par tirage aléatoire. Fait avec Flutter et Firebase pour la base de données. Lien disponible ici : ",
+  "mynextgame": "My Next Game est une application Android où l'utilisateur peut obtenir un titre et la couverture d'un jeu vidéo soit en répondant à 4 questions soit par tirage aléatoire. Fait avec Flutter et Firebase pour la base de données. Je suis parti sur un design fun avec un logo et des couleurs au ton joyeux. Lien disponible ici : ",
   "lanya": "Lanya est un site web classique d'e-commerce, utilisant Firebase et Stripe, combiné avec Vue 2 et Vuetify pour créer une Single Page Application. Lien bientôt disponible",
   "multitasky": "Mültitaskÿ est un petit projet pour tester quelques composants Vuetify et Vue Leaflet pour manipuler des cartes. Disponible ici : ",
   "fleeting": "Fleeting était un gros projet Symfony qui a malheureusement été annulé. Inscription hautement filtrée, messagerie 1 à 1, paiement unique et abonnement. Le design non fini était fait avec Bootstrap 4.6"
