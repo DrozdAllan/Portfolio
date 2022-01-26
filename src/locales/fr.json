@@ -28,7 +28,8 @@
   "mailRule": "Mail requis",
   "mailRule2": "Format de mail invalide",
   "messageRule": "Message requis",
-  "mynextgame": "My Next Game est une application Android où l'utilisateur peut obtenir un titre et la couverture d'un jeu vidéo soit en répondant à 4 questions soit par tirage aléatoire. Fait avec Flutter et Firebase pour la base de données. Je suis parti sur un design fun avec un logo et des couleurs au ton joyeux. Lien disponible ici : ",
+  "mynextgame": "My Next Game est une application Android où l'utilisateur peut obtenir un titre et la couverture d'un jeu vidéo soit en répondant à 4 questions soit par tirage aléatoire. Fait avec Flutter et Firebase pour la base de données. Je suis parti sur un design fun avec un logo et des couleurs au ton joyeux. Pour un aperçu rapide sur une version Web voir ",
+  "appLink": "et pour le lien Google Play Store : ",
   "lanya": "Lanya est un site web classique d'e-commerce, utilisant Firebase et Stripe, combiné avec Vue 2 et Vuetify pour créer une Single Page Application. Lien bientôt disponible",
   "multitasky": "Mültitaskÿ est un petit projet pour tester quelques composants Vuetify et Vue Leaflet pour manipuler des cartes. Disponible ici : ",
   "fleeting": "Fleeting était un gros projet Symfony qui a malheureusement été annulé. Inscription hautement filtrée, messagerie 1 à 1, paiement unique et abonnement. Le design non fini était fait avec Bootstrap 4.6"

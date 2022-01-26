@@ -25,6 +25,14 @@
             <v-card-text class="white--text">
               {{ $t("mynextgame") }}
               <a
+                href="https://choosemyvideogame.web.app/#/"
+                target="_blank"
+                class="white--text"
+              >
+                Web Preview</a
+              >
+              {{ $t("appLink") }}
+              <a
                 href="https://play.google.com/store/apps/details?id=com.allandrozd.my_next_game"
                 target="_blank"
                 class="white--text"
@@ -121,84 +129,84 @@
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-        tab: null,
-        multitask: [
-          {
-            src: require("../assets/multitask/Screenshot1.png"),
-          },
-          {
-            src: require("../assets/multitask/Screenshot2.png"),
-          },
-          {
-            src: require("../assets/multitask/Screenshot3.png"),
-          },
-        ],
-        lanya: [
-          {
-            src: require("../assets/lanya/Screenshot1.png"),
-          },
-          {
-            src: require("../assets/lanya/Screenshot2.png"),
-          },
-          {
-            src: require("../assets/lanya/Screenshot3.png"),
-          },
-          {
-            src: require("../assets/lanya/Screenshot4.png"),
-          },
-          {
-            src: require("../assets/lanya/Screenshot5.png"),
-          },
-          {
-            src: require("../assets/lanya/Screenshot6.png"),
-          },
-        ],
-        fleeting: [
-          {
-            src: require("../assets/fleeting/Screenshot1.png"),
-          },
-          {
-            src: require("../assets/fleeting/Screenshot2.png"),
-          },
-          {
-            src: require("../assets/fleeting/Screenshot3.png"),
-          },
-        ],
-        mynextgame: [
-          {
-            src: require("../assets/mynextgame/AppPresentation.png"),
-          },
-        ],
-      };
+export default {
+  data() {
+    return {
+      tab: null,
+      multitask: [
+        {
+          src: require("../assets/multitask/Screenshot1.png"),
+        },
+        {
+          src: require("../assets/multitask/Screenshot2.png"),
+        },
+        {
+          src: require("../assets/multitask/Screenshot3.png"),
+        },
+      ],
+      lanya: [
+        {
+          src: require("../assets/lanya/Screenshot1.png"),
+        },
+        {
+          src: require("../assets/lanya/Screenshot2.png"),
+        },
+        {
+          src: require("../assets/lanya/Screenshot3.png"),
+        },
+        {
+          src: require("../assets/lanya/Screenshot4.png"),
+        },
+        {
+          src: require("../assets/lanya/Screenshot5.png"),
+        },
+        {
+          src: require("../assets/lanya/Screenshot6.png"),
+        },
+      ],
+      fleeting: [
+        {
+          src: require("../assets/fleeting/Screenshot1.png"),
+        },
+        {
+          src: require("../assets/fleeting/Screenshot2.png"),
+        },
+        {
+          src: require("../assets/fleeting/Screenshot3.png"),
+        },
+      ],
+      mynextgame: [
+        {
+          src: require("../assets/mynextgame/AppPresentation.png"),
+        },
+      ],
+    };
+  },
+  computed: {
+    dynamicHeight() {
+      if (this.$vuetify.breakpoint.smAndDown) {
+        return 200;
+      } else {
+        return 650;
+      }
     },
-    computed: {
-      dynamicHeight() {
-        if (this.$vuetify.breakpoint.smAndDown) {
-          return 200;
-        } else {
-          return 650;
-        }
-      },
-      myNextGameDynamicHeight() {
-        if (this.$vuetify.breakpoint.smAndDown) {
-          return 200;
-        } else if (this.$vuetify.breakpoint.lg) {
-          return 575;
-        } else if (this.$vuetify.breakpoint.xl) {
-          return 900;
-        } else {
-          return 375;
-        }
-      },
+    myNextGameDynamicHeight() {
+      if (this.$vuetify.breakpoint.smAndDown) {
+        return 200;
+      } else if (this.$vuetify.breakpoint.lg) {
+        return 575;
+      } else if (this.$vuetify.breakpoint.xl) {
+        return 900;
+      } else {
+        return 375;
+      }
     },
-  };
+  },
+};
 </script>
 
 <style>
-  /* .v-image__image--cover {
+/* .v-image__image--cover {
     background-size: contain !important;
   } */
 </style>
