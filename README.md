@@ -1,3 +1,3 @@
 # Link
 
-https://drozdallanportfolio.web.app/ 
+https://allandrozd.com/ 
