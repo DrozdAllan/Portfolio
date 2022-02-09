@@ -66,12 +66,12 @@ export default new Vuetify({
   theme: {
     themes: {
       light: {
-        main: "#0061C2",
-        action: "#0ACFC9",
+        main: "#507c54",
+        action: "#622C05",
       },
       dark: {
-        main: "#023E8A",
-        action: "#0ACFC9",
+        main: "#1D2E1F",
+        action: "#622C05",
       },
     },
   },

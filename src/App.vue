@@ -112,69 +112,69 @@
 </template>
 
 <script>
-  import about from "./components/about";
-  import Contact from "./components/contact.vue";
-  import Credits from "./components/credits.vue";
-  import Portfolio from "./components/portfolio.vue";
-  import services from "./components/services.vue";
-  import Skills from "./components/skills.vue";
+import about from "./components/about";
+import Contact from "./components/contact.vue";
+import Credits from "./components/credits.vue";
+import Portfolio from "./components/portfolio.vue";
+import services from "./components/services.vue";
+import Skills from "./components/skills.vue";
 
-  export default {
-    name: "App",
-    components: { about, services, Skills, Portfolio, Contact, Credits },
-    data() {
-      return {
-        drawer: null,
-        isDarkTheme: false,
-      };
+export default {
+  name: "App",
+  components: { about, services, Skills, Portfolio, Contact, Credits },
+  data() {
+    return {
+      drawer: null,
+      isDarkTheme: false,
+    };
+  },
+  computed: {
+    drawerStatus() {
+      if (this.$vuetify.breakpoint.mobile) {
+        this.drawer = false;
+      }
+      return this.drawer;
     },
-    computed: {
-      drawerStatus() {
-        if (this.$vuetify.breakpoint.mobile) {
-          this.drawer = false;
-        }
-        return this.drawer;
-      },
+  },
+  methods: {
+    toggleDrawer() {
+      this.drawer = !this.drawer;
     },
-    methods: {
-      toggleDrawer() {
-        this.drawer = !this.drawer;
-      },
-      toggleTheme() {
-        this.isDarkTheme = !this.isDarkTheme;
-        this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
-      },
-      navigateTo(location) {
-        this.$vuetify.goTo(location, {
-          duration: "1500",
-          easing: "easeInOutQuad",
-        });
-        if (this.$vuetify.breakpoint.mobile) {
-          this.drawer = false;
-        }
-      },
+    toggleTheme() {
+      this.isDarkTheme = !this.isDarkTheme;
+      this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
     },
-  };
+    navigateTo(location) {
+      this.$vuetify.goTo(location, {
+        duration: "1500",
+        easing: "easeInOutQuad",
+      });
+      if (this.$vuetify.breakpoint.mobile) {
+        this.drawer = false;
+      }
+    },
+  },
+};
 </script>
 
 <style lang="sass" scoped>
-  .dropd
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0)), url('./assets/blues-lee-zUsvn51N2Ro-unsplash.jpg')
-    background-size: auto
+.dropd
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0)), url('./assets/annie-spratt-KDVo3qepq3I-unsplash.jpg')
+  background-size: auto
 </style>
 
 <style lang="scss">
-  @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
 
-  $font-family: "Raleway", sans-serif;
-  .v-application {
-    // Pour le général
-    font-family: $font-family;
+$font-family: "Raleway", sans-serif;
+.v-application {
+  // Pour le général
+  font-family: $font-family;
 
-    // Pour englober toutes les classes de vuetify
-    [class*="display-"],
-    [class*="text-"] {
-      font-family: $font-family !important;
-    }
+  // Pour englober toutes les classes de vuetify
+  [class*="display-"],
+  [class*="text-"] {
+    font-family: $font-family !important;
   }
+}
 </style>

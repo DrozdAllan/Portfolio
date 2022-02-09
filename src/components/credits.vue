@@ -3,7 +3,21 @@
     <v-row>
       <v-col cols="12" md="6">
         <span class="text-caption animation-text-none"
-          >Photos by Bruno Thethe and blues lee on
+          >Photos by
+          <a
+            class="white--text"
+            href="https://unsplash.com/@johnnyrgb"
+            target="new"
+            >Ivan Lopatin</a
+          >
+          and
+          <a
+            class="white--text"
+            href="https://unsplash.com/@anniespratt"
+            target="new"
+            >Annie Spratt</a
+          >
+          on
           <a
             class="white--text"
             href="https://unsplash.com/"
@@ -24,13 +38,13 @@
           ></span
         >
       </v-col>
-      <v-spacer class="hidden-md-and-up" /> 
+      <v-spacer class="hidden-md-and-up" />
     </v-row>
   </v-container>
 </template>
 
 <script>
-  export default {
-    name: "Credits",
-  };
+export default {
+  name: "Credits",
+};
 </script>
