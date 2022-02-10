@@ -18,7 +18,7 @@
                 </v-icon>
               </v-col>
               <v-col cols="12">
-                <span :class="{ 'show-name': hover }" class="transparent--text"
+                <span :class="{ 'show-name': hover }" class="transparent--text text-h5"
                   >Flutter</span
                 >
               </v-col>
@@ -37,7 +37,7 @@
                 </v-icon>
               </v-col>
               <v-col cols="12">
-                <span :class="{ 'show-name': hover }" class="transparent--text"
+                <span :class="{ 'show-name': hover }" class="transparent--text text-h5"
                   >Firebase</span
                 >
               </v-col>
@@ -56,7 +56,7 @@
                 </v-icon>
               </v-col>
               <v-col cols="12">
-                <span :class="{ 'show-name': hover }" class="transparent--text"
+                <span :class="{ 'show-name': hover }" class="transparent--text text-h5"
                   >Vue</span
                 >
               </v-col>
@@ -75,7 +75,7 @@
                 </v-icon>
               </v-col>
               <v-col cols="12">
-                <span :class="{ 'show-name': hover }" class="transparent--text"
+                <span :class="{ 'show-name': hover }" class="transparent--text text-h5"
                   >Symfony</span
                 >
               </v-col>
@@ -94,7 +94,7 @@
                 </v-icon>
               </v-col>
               <v-col cols="12">
-                <span :class="{ 'show-name': hover }" class="transparent--text"
+                <span :class="{ 'show-name': hover }" class="transparent--text text-h5"
                   >Api Platform</span
                 >
               </v-col>
@@ -116,7 +116,7 @@
                 </v-icon>
               </v-col>
               <v-col cols="12">
-                <span :class="{ 'show-name': hover }" class="transparent--text"
+                <span :class="{ 'show-name': hover }" class="transparent--text text-h5"
                   >Figma</span
                 >
               </v-col>
@@ -135,7 +135,7 @@
                 </v-icon>
               </v-col>
               <v-col cols="12">
-                <span :class="{ 'show-name': hover }" class="transparent--text"
+                <span :class="{ 'show-name': hover }" class="transparent--text text-h5"
                   >Gimp</span
                 >
               </v-col>
@@ -154,14 +154,14 @@
                 </v-icon>
               </v-col>
               <v-col cols="12">
-                <span :class="{ 'show-name': hover }" class="transparent--text"
+                <span :class="{ 'show-name': hover }" class="transparent--text text-h5"
                   >Rive</span
                 >
               </v-col>
             </v-row>
           </v-hover>
         </v-col>
-        <v-col>
+        <!-- <v-col>
           <v-hover v-slot="{ hover }">
             <v-row>
               <v-col>
@@ -173,13 +173,13 @@
                 </v-icon>
               </v-col>
               <v-col cols="12">
-                <span :class="{ 'show-name': hover }" class="transparent--text"
+                <span :class="{ 'show-name': hover }" class="transparent--text text-h5"
                   >Photoshop</span
                 >
               </v-col>
             </v-row>
           </v-hover>
-        </v-col>
+        </v-col> -->
       </v-row>
     </v-container>
   </div>

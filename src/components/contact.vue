@@ -7,14 +7,14 @@
       <v-row>
         <v-col cols="12" md="6">
           <v-card shaped outlined color="main" dark class="pa-5">
-            <v-form ref="contactForm" v-model="valid" lazy-validation>
+            <v-form ref="contactForm" v-model="valid">
               {{ $t("mail") }}
               <v-text-field
                 v-model="mail"
                 :rules="mailRules($t('mailRule'), $t('mailRule2'))"
                 required
                 outlined
-                color="rose"
+                color="action"
               />
 
               {{ $t("message") }}
@@ -22,7 +22,7 @@
                 v-model="message"
                 :rules="messageRules($t('messageRule'))"
                 outlined
-                color="rose"
+                color="action"
               />
 
               <v-tooltip v-model="show" bottom>
@@ -50,39 +50,37 @@
 </template>
 
 <script>
-  import { messagesCollection } from "../firebase/";
+import { messagesCollection } from "../firebase/";
 
-  export default {
-    data() {
-      return {
-        valid: false,
-        show: false,
-        mail: "",
-        message: "",
-      };
+export default {
+  data() {
+    return {
+      valid: false,
+      show: false,
+      mail: "",
+      message: "",
+    };
+  },
+  methods: {
+    mailRules(message, message2) {
+      return [(v) => !!v || message], [(v) => /.+@.+\..+/.test(v) || message2];
     },
-    methods: {
-      mailRules(message, message2) {
-        return (
-          [(v) => !!v || message], [(v) => /.+@.+\..+/.test(v) || message2]
-        );
-      },
-      messageRules(message) {
-        return [(v) => !!v || message];
-      },
-      sendMail() {
-        if (this.$refs.contactForm.validate()) {
-          messagesCollection
-            .add({
-              mail: this.mail,
-              message: this.message,
-            })
-            .then(() => {
-              this.show = true;
-              this.$refs.contactForm.reset();
-            });
-        }
-      },
+    messageRules(message) {
+      return [(v) => !!v || message];
     },
-  };
+    sendMail() {
+      if (this.$refs.contactForm.validate()) {
+        messagesCollection
+          .add({
+            mail: this.mail,
+            message: this.message,
+          })
+          .then(() => {
+            this.show = true;
+            this.$refs.contactForm.reset();
+          });
+      }
+    },
+  },
+};
 </script>
