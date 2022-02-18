@@ -4,7 +4,7 @@
       <v-list>
         <div class="text-center">
           <v-avatar color="main" size="90">
-            <img src="./assets/PortfolioLogoGabriola.png" />
+            <img src="./assets/PortfolioLogoInkFree.png" />
           </v-avatar>
           <v-list-item-title>
             <span class="text-h4">Allan Drozd</span>
