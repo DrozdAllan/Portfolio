@@ -30,8 +30,8 @@
 								target="_blank"
 								class="white--text"
 							>
-								Web Preview</a
-							>
+								Web Preview
+							</a>
 							{{ $t("appLink") }}
 							<a
 								href="https://play.google.com/store/apps/details?id=com.allandrozd.my_next_game"
@@ -43,12 +43,13 @@
 						</v-card-text>
 						<v-dialog v-model="dialogMyNextGame">
 							<template v-slot:activator="{ on, attrs }">
-								<v-row v-on="on" v-bind="attrs">
+								<v-row v-on="on" v-bind="attrs" dense>
 									<v-col cols="12">
 										<v-img
 											:src="mynextgame[0].src"
 											class="main"
 											contain
+											eager
 											max-height="400"
 										/>
 									</v-col>
@@ -69,6 +70,7 @@
 										<v-img
 											:src="item.src"
 											contain
+											eager
 											max-height="645"
 											@click="dialogMyNextGame = false"
 										/>
@@ -92,20 +94,21 @@
 						</v-card-text>
 						<v-dialog v-model="dialogLanya">
 							<template v-slot:activator="{ on, attrs }">
-								<v-row v-on="on" v-bind="attrs">
+								<v-row v-on="on" v-bind="attrs" dense>
 									<v-col cols="12" md="6">
 										<v-img
 											:src="lanya[0].src"
 											class="main"
 											eager
+											aspect-ratio="1.7778"
 										/>
 									</v-col>
-
 									<v-col class="d-none d-md-block" md="6">
 										<v-img
 											:src="lanya[1].src"
 											class="main"
 											eager
+											aspect-ratio="1.7778"
 										/>
 									</v-col>
 								</v-row>
@@ -150,20 +153,21 @@
 						</v-card-text>
 						<v-dialog v-model="dialogMovies">
 							<template v-slot:activator="{ on, attrs }">
-								<v-row v-on="on" v-bind="attrs">
+								<v-row v-on="on" v-bind="attrs" dense>
 									<v-col cols="12" md="6">
 										<v-img
 											:src="moviestitle[0].src"
 											class="main"
 											eager
+											aspect-ratio="1.7778"
 										/>
 									</v-col>
-
 									<v-col class="d-none d-md-block" md="6">
 										<v-img
 											:src="moviestitle[1].src"
 											class="main"
 											eager
+											aspect-ratio="1.7778"
 										/>
 									</v-col>
 								</v-row>
@@ -207,12 +211,13 @@
 						</v-card-text>
 						<v-dialog v-model="dialogMultitasky">
 							<template v-slot:activator="{ on, attrs }">
-								<v-row v-on="on" v-bind="attrs">
+								<v-row v-on="on" v-bind="attrs" dense>
 									<v-col cols="12" md="6">
 										<v-img
 											:src="multitask[0].src"
 											class="main"
 											eager
+											aspect-ratio="1.7778"
 										/>
 									</v-col>
 
@@ -221,6 +226,7 @@
 											:src="multitask[1].src"
 											class="main"
 											eager
+											aspect-ratio="1.7778"
 										/>
 									</v-col>
 								</v-row>
@@ -258,12 +264,13 @@
 						</v-card-text>
 						<v-dialog v-model="dialogFleeting">
 							<template v-slot:activator="{ on, attrs }">
-								<v-row v-on="on" v-bind="attrs">
+								<v-row v-on="on" v-bind="attrs" dense>
 									<v-col cols="12" md="6">
 										<v-img
 											:src="fleeting[0].src"
 											class="main"
 											eager
+											aspect-ratio="1.7778"
 										/>
 									</v-col>
 
@@ -272,6 +279,7 @@
 											:src="fleeting[1].src"
 											class="main"
 											eager
+											aspect-ratio="1.7778"
 										/>
 									</v-col>
 								</v-row>
@@ -319,63 +327,63 @@ export default {
 			tab: null,
 			multitask: [
 				{
-					src: require("../assets/multitask/Screenshot1.png"),
+					src: require("../assets/multitask/Screenshot1-min.png"),
 				},
 				{
-					src: require("../assets/multitask/Screenshot2.png"),
+					src: require("../assets/multitask/Screenshot2-min.png"),
 				},
 				{
-					src: require("../assets/multitask/Screenshot3.png"),
+					src: require("../assets/multitask/Screenshot3-min.png"),
 				},
 			],
 			lanya: [
 				{
-					src: require("../assets/lanya/Screenshot1.png"),
+					src: require("../assets/lanya/Screenshot1-min.png"),
 				},
 				{
-					src: require("../assets/lanya/Screenshot2.png"),
+					src: require("../assets/lanya/Screenshot2-min.png"),
 				},
 				{
-					src: require("../assets/lanya/Screenshot3.png"),
+					src: require("../assets/lanya/Screenshot3-min.png"),
 				},
 				{
-					src: require("../assets/lanya/Screenshot4.png"),
+					src: require("../assets/lanya/Screenshot4-min.png"),
 				},
 				{
-					src: require("../assets/lanya/Screenshot5.png"),
+					src: require("../assets/lanya/Screenshot5-min.png"),
 				},
 				{
-					src: require("../assets/lanya/Screenshot6.png"),
+					src: require("../assets/lanya/Screenshot6-min.png"),
 				},
 				{
-					src: require("../assets/lanya/Screenshot7.png"),
+					src: require("../assets/lanya/Screenshot7-min.png"),
 				},
 			],
 			fleeting: [
 				{
-					src: require("../assets/fleeting/Screenshot1.png"),
+					src: require("../assets/fleeting/Screenshot1-min.png"),
 				},
 				{
-					src: require("../assets/fleeting/Screenshot2.png"),
+					src: require("../assets/fleeting/Screenshot2-min.png"),
 				},
 				{
-					src: require("../assets/fleeting/Screenshot3.png"),
+					src: require("../assets/fleeting/Screenshot3-min.png"),
 				},
 			],
 			mynextgame: [
 				{
-					src: require("../assets/mynextgame/AppPresentation.png"),
+					src: require("../assets/mynextgame/AppPresentation-min.png"),
 				},
 			],
 			moviestitle: [
 				{
-					src: require("../assets/moviestitle/Screenshot1.png"),
+					src: require("../assets/moviestitle/Screenshot1-min.png"),
 				},
 				{
-					src: require("../assets/moviestitle/Screenshot2.png"),
+					src: require("../assets/moviestitle/Screenshot2-min.png"),
 				},
 				{
-					src: require("../assets/moviestitle/Screenshot3.png"),
+					src: require("../assets/moviestitle/Screenshot3-min.png"),
 				},
 			],
 		};

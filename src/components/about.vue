@@ -41,7 +41,7 @@ export default {
 <style lang="sass" scoped>
 .about-hero
   background-color: #507c54
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 1)), url('../assets/ivan-lopatin-yJEvZGhsSLY-unsplash.jpg')
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 1)), url('../assets/ivan-lopatin-yJEvZGhsSLY-unsplash-min.jpg')
   background-size: cover
   height: 100vh
 </style>

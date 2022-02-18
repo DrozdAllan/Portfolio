@@ -160,7 +160,7 @@ export default {
 <style lang="sass" scoped>
 .dropd
   background-color: #507c54
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0)), url('./assets/annie-spratt-KDVo3qepq3I-unsplash.jpg')
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0)), url('./assets/annie-spratt-KDVo3qepq3I-unsplash-min.jpg')
   background-size: auto
 </style>
 
