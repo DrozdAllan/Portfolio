@@ -33,5 +33,6 @@
   "lanya": "Lanya is a website based on a typical e-shop layout, using Firebase and Stripe, combined with Vue 2 and Vuetify to make a Single Page Application. Project available here :",
   "moviesTitle": "MoviesTitle is a project where I wanted to create an Api through ApiPlatform. Running on PHP 8 with Symfony served with Vue 2 + Vuetify on the front. Project available here (hosted on Heroku with free dyno so it takes some time to load) :",
   "multitasky": "Mültitaskÿ is a little project I did to test some Vuetify components and the Vue Leaflet module to manipulate maps. Available here : ",
-  "fleeting": "Fleeting was a big Symfony project that has been unfortunately canceled. Highly filtered registration, 1 to 1 messaging, one time payment and subscription. The unfinished design was made with Bootstrap 4.6"
+  "fleeting": "Fleeting was my first big project. Registration verified by admin, profile search, 1 to 1 messaging, one time payment and subscription. Using only Symfony and the design was made with Bootstrap 4.6",
+  "hackaton": "This little project was made for the Flutter Hackaton 2022. The goal was to reimagine the classic puzzle. Built with Flutter for web and available here : "
 }
