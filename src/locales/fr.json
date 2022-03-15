@@ -7,14 +7,14 @@
   "talk2": "Armé de Flutter, Vue et Firebase",
   "talk3": "Bienvenue sur ma page",
   "what": "Ce que je peux faire pour vous",
-  "what0": "Développement Mobile",
-  "whatText0": "Je me suis intéressé à Flutter mi-2021, depuis je me concentre sur le développement mobile. Pour l'instant je l'utilise pour développer des applications Android uniquement.",
-  "what1": "Développement Web",
-  "whatText1": "Je suis intéressé par les projets de petite et moyenne taille, en fonction de vos besoins et votre temps. Je suis capable de commencer un projet de zéro ou de renouveler votre configuration sur certaines technologies.",
+  "what0": "Développement Web",
+  "whatText0": "J'ai commencé le développement web vers fin 2020. Depuis j'ai travaillé sur des petits à moyens projets. Je suis capable de commencer de zéro ou de renouveler un site web selon les technologies utilisées.",
+  "what1": "Développement Mobile",
+  "whatText1": "Je me suis intéressé à Flutter mi-2021, et j'ai beaucoup aimé l'apprendre et l'utiliser. Pour l'instant je l'ai utilisé pour développer uniquement des applications Android.",
   "what2": "Déploiement",
   "whatText2": "Je travaille principalement avec Firebase et Heroku pour fournir les meilleures solutions cloud mais j'ai également expérimenté l'hébergement avec FTP.",
   "what3": "Design",
-  "whatText3": "Inspiré par les tendances UI/UX, je prototype mes projets avec Figma. J'essaie au mieux d'implémenter les dernières modes en design pour fournir les produits les plus attrayants.",
+  "whatText3": "Inspiré par les tendances UI/UX, je prototype mes projets avec Figma. J'essaie au mieux d'implémenter les dernières modes en design pour fournir les produits les plus attrayants. J'aime également créer de petites animations avec Rive.",
   "know": "Ce que je sais",
   "prog": "Programmation",
   "design": "Design",
@@ -34,5 +34,6 @@
   "moviesTitle": "MoviesTitle est un projet où je voulais créer une API avec ApiPlatform. Fait en PHP 8 avec Symfony livré avec Vue 2 + Vuetify pour le front. Projet disponible ici (hébergé sur Heroku avec free dyno, il met un peu de temps à charger) :",
   "multitasky": "Mültitaskÿ est un petit projet pour tester quelques composants Vuetify et Vue Leaflet pour manipuler des cartes. Disponible ici : ",
   "fleeting": "Fleeting était mon premier gros projet. Inscription vérifié par admin, recherche de profil, messagerie 1 à 1, paiement unique et abonnement. Utilisant uniquement Symfony et le design était fait avec Bootstrap 4.6",
-  "hackaton": "Ce petit projet a été fait pour le Flutter Hackaton 2022. L'objectif était de réimaginer le puzzle classique. Fait avec Flutter Web et disponible ici : "
+  "hackaton": "Ce petit projet a été fait pour le Flutter Hackaton 2022. L'objectif était de réimaginer le puzzle classique. Fait avec Flutter Web et disponible ici : ",
+  "larallo": "Le projet sur lequel je travaille actuellement est une application de Chat utilisant l'api Pusher, avec un back Laravel et un front Vue 2. Il est disponible ici (hébergé sur Heroku avec free dyno, il met un peu de temps à charger) :"
 }

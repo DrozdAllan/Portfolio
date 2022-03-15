@@ -7,14 +7,14 @@
   "talk2": "Armed with Flutter, Vue and Firebase",
   "talk3": "Welcome to my page",
   "what": "What I can do for you",
-  "what0": "Mobile Development",
-  "whatText0": "I took an interest in Flutter mid-2021, since then I'm focused on Mobile Development. For now I use it to develop Android applications only.",
-  "what1": "Web Development",
-  "whatText1": "I am focused on small to medium sized projects, depending on your needs and time. I am able to start a project from scratch or renewing your configuration on some technologies.",
+  "what0": "Web Development",
+  "whatText0": "I started web development at the end of 2020. Since then I've been working on small to medium sized projects. I am able to start from scratch or renew a website depending on the technologies used.",
+  "what1": "Mobile Development",
+  "whatText1": "I took an interest in Flutter mid-2021 and I loved learning and using it. For now I have used it to develop only Android applications.",
   "what2": "Deployment",
   "whatText2": "I mainly work with Firebase and Heroku to provide the best cloud solutions but I also have experimented webhosting with FTP use.",
   "what3": "Design",
-  "whatText3": "Inspired by UI/UX design trends, I prototype my projects with Figma. I try my best to implement latest trend design to provide the best appealing products.",
+  "whatText3": "Inspired by UI/UX design trends, I prototype my projects with Figma. I try my best to implement latest trend design to provide the best appealing products. I also like to create little animations with Rive.",
   "know": "What I know",
   "prog": "Programming",
   "design": "Design",
@@ -34,5 +34,6 @@
   "moviesTitle": "MoviesTitle is a project where I wanted to create an Api through ApiPlatform. Running on PHP 8 with Symfony served with Vue 2 + Vuetify on the front. Project available here (hosted on Heroku with free dyno so it takes some time to load) :",
   "multitasky": "Mültitaskÿ is a little project I did to test some Vuetify components and the Vue Leaflet module to manipulate maps. Available here : ",
   "fleeting": "Fleeting was my first big project. Registration verified by admin, profile search, 1 to 1 messaging, one time payment and subscription. Using only Symfony and the design was made with Bootstrap 4.6",
-  "hackaton": "This little project was made for the Flutter Hackaton 2022. The goal was to reimagine the classic puzzle. Built with Flutter for web and available here : "
+  "hackaton": "This little project was made for the Flutter Hackaton 2022. The goal was to reimagine the classic puzzle. Built with Flutter for web and available here : ",
+  "larallo": "The project I am working on is a Chat App using the Pusher API, with a Laravel backend and a Vue 2 frontend. It is available here (hosted on Heroku with free dyno so it takes some time to load) :"
 }

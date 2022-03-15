@@ -13,6 +13,7 @@
                 background-color="main"
                 v-model="tab"
             >
+                <v-tab key="7">Laravel Chat App</v-tab>
                 <v-tab key="6">Flutter Hackaton</v-tab>
                 <v-tab key="1">My Next Game</v-tab>
                 <v-tab key="2">Lanya</v-tab>
@@ -20,9 +21,68 @@
                 <v-tab key="4">Mültitaskÿ</v-tab>
                 <v-tab key="5">Fleeting</v-tab>
             </v-tabs>
-            <!-- TODO: when zooming images for carousel replace the white background with the green main color DONE -->
-            <!-- TODO: add the puzzle project : https://flutter-hackaton-afbbc.web.app/#/  -->
             <v-tabs-items v-model="tab">
+                <v-tab-item key="7">
+                    <v-card color="main" dark flat>
+                        <v-card-text class="white--text">
+                            {{ $t("larallo") }}
+                            <a
+                                href="https://larallo-test.herokuapp.com/"
+                                target="_blank"
+                                class="white--text"
+                            >
+                                Laravel Chat App
+                            </a>
+                        </v-card-text>
+                        <v-dialog v-model="dialogLarallo">
+                            <template v-slot:activator="{ on, attrs }">
+                                <v-row v-on="on" v-bind="attrs" dense>
+                                    <v-col cols="12" md="6">
+                                        <v-img
+                                            :src="larallo[0].src"
+                                            class="main"
+                                            eager
+                                            aspect-ratio="1.7778"
+                                        />
+                                    </v-col>
+
+                                    <v-col class="d-none d-md-block" md="6">
+                                        <v-img
+                                            :src="larallo[1].src"
+                                            class="main"
+                                            eager
+                                            aspect-ratio="1.7778"
+                                        />
+                                    </v-col>
+                                </v-row>
+                            </template>
+
+                            <v-card>
+                                <v-carousel
+                                    continuous
+                                    cycle
+                                    interval="5000"
+                                    height="auto"
+                                >
+                                    <v-carousel-item
+                                        v-for="(item, i) in larallo"
+                                        :key="i"
+                                    >
+                                        <v-sheet height="100%" color="main">
+                                            <v-img
+                                                :src="item.src"
+                                                contain
+                                                eager
+                                                max-height="645"
+                                                @click="dialogLarallo = false"
+                                            />
+                                        </v-sheet>
+                                    </v-carousel-item>
+                                </v-carousel>
+                            </v-card>
+                        </v-dialog>
+                    </v-card>
+                </v-tab-item>
                 <v-tab-item key="6">
                     <v-card color="main" dark flat>
                         <v-card-text class="white--text">
@@ -107,15 +167,33 @@
                         <v-dialog v-model="dialogMyNextGame">
                             <template v-slot:activator="{ on, attrs }">
                                 <v-row v-on="on" v-bind="attrs" dense>
-                                    <v-col cols="12">
+                                    <v-col cols="12" md="6">
                                         <v-img
                                             :src="mynextgame[0].src"
                                             class="main"
-                                            contain
                                             eager
-                                            max-height="400"
+                                            aspect-ratio="1.7778"
                                         />
                                     </v-col>
+                                    <v-col class="d-none d-md-block" md="6">
+                                        <v-img
+                                            :src="mynextgame[1].src"
+                                            class="main"
+                                            eager
+                                            aspect-ratio="1.7778"
+                                        />
+                                    </v-col>
+                                    <!-- <v-col class="hidden-sm-and-down"></v-col>
+                                    <v-col cols="12" md="6" align-self="center">
+                                        <v-img
+                                            :src="mynextgame[0].src"
+                                            class="main"
+                                            eager
+                                            aspect-ratio="1.7776"
+                                            align-self="center"
+                                        />
+                                    </v-col>
+                                    <v-col class="hidden-sm-and-down"></v-col> -->
                                 </v-row>
                             </template>
 
@@ -402,6 +480,7 @@ export default {
             dialogFleeting: false,
             dialogMovies: false,
             dialogHackaton: false,
+            dialogLarallo: false,
             tab: null,
             multitask: [
                 {
@@ -450,6 +529,9 @@ export default {
             ],
             mynextgame: [
                 {
+                    src: require("../assets/mynextgame/FeatureGraphic-min.png"),
+                },
+                {
                     src: require("../assets/mynextgame/AppPresentation-min.png"),
                 },
             ],
@@ -475,6 +557,14 @@ export default {
                     src: require("../assets/puzzle/screenshot3.png"),
                 },
             ],
+            larallo: [
+                {
+                    src: require("../assets/larallo/screenshot1.png"),
+                },
+                {
+                    src: require("../assets/larallo/screenshot2.png"),
+                },
+            ],
         };
     },
     computed: {
@@ -485,23 +575,6 @@ export default {
                 return 650;
             }
         },
-        myNextGameDynamicHeight() {
-            if (this.$vuetify.breakpoint.smAndDown) {
-                return 200;
-            } else if (this.$vuetify.breakpoint.lg) {
-                return 375;
-            } else if (this.$vuetify.breakpoint.xl) {
-                return 800;
-            } else {
-                return 375;
-            }
-        },
     },
 };
 </script>
-
-<style>
-/* .v-image__image--cover {
-    background-size: contain !important;
-  } */
-</style>
