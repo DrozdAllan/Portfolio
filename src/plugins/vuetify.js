@@ -14,6 +14,8 @@ import gimpIcon from "@/assets/icons/gimpIcon";
 import apiPlatformIcon from "@/assets/icons/apiPlatformIcon";
 import riveIcon from "@/assets/icons/riveIcon";
 import laravelIcon from "@/assets/icons/laravelIcon";
+import expressjsIcon from "@/assets/icons/expressjsIcon";
+import mongoDBIcon from "@/assets/icons/mongoDBIcon";
 
 Vue.use(Vuetify);
 
@@ -65,6 +67,12 @@ export default new Vuetify({
             laravelIcon: {
                 component: laravelIcon,
             },
+            expressjsIcon: {
+                component: expressjsIcon,
+            },
+            mongoDBIcon: {
+                component: mongoDBIcon,
+            }
         },
     },
     theme: {
