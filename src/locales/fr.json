@@ -35,5 +35,5 @@
   "multitasky": "Mültitaskÿ est un petit projet pour tester quelques composants Vuetify et Vue Leaflet pour manipuler des cartes. Disponible ici : ",
   "fleeting": "Fleeting était mon premier gros projet. Inscription vérifié par admin, recherche de profil, messagerie 1 à 1, paiement unique et abonnement. Utilisant uniquement Symfony et le design était fait avec Bootstrap 4.6",
   "hackaton": "Ce petit projet a été fait pour le Flutter Hackaton 2022. L'objectif était de réimaginer le puzzle classique. Fait avec Flutter Web et disponible ici : ",
-  "larallo": "Le projet sur lequel je travaille actuellement est une application de Chat utilisant l'api Pusher, avec un back Laravel et un front Vue 2. Il est disponible ici (hébergé sur Heroku avec free dyno, il met un peu de temps à charger) :"
+  "larallo": "Ce projet est une simple application de Chat utilisant l'api Pusher, avec un back Laravel et un front Vue 3 avec Quasar. Il est disponible ici (hébergé sur Heroku avec free dyno, il met un peu de temps à charger) :"
 }

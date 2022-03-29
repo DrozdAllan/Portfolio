@@ -35,5 +35,5 @@
   "multitasky": "Mültitaskÿ is a little project I did to test some Vuetify components and the Vue Leaflet module to manipulate maps. Available here : ",
   "fleeting": "Fleeting was my first big project. Registration verified by admin, profile search, 1 to 1 messaging, one time payment and subscription. Using only Symfony and the design was made with Bootstrap 4.6",
   "hackaton": "This little project was made for the Flutter Hackaton 2022. The goal was to reimagine the classic puzzle. Built with Flutter for web and available here : ",
-  "larallo": "The project I am working on is a Chat App using the Pusher API, with a Laravel backend and a Vue 2 frontend. It is available here (hosted on Heroku with free dyno so it takes some time to load) :"
+  "larallo": "This project is a simple Chat App using the Pusher API, with a Laravel backend and a Vue 3 with Quasar frontend. It is available here (hosted on Heroku with free dyno so it takes some time to load) :"
 }

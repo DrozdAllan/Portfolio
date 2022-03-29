@@ -16,8 +16,8 @@
         <v-tab key="7">My Next Game</v-tab>
         <v-tab key="6">Lanya</v-tab>
         <v-tab key="5">Flutter Hackaton</v-tab>
-        <v-tab key="4">MoviesTitle</v-tab>
-        <v-tab key="3">Laravel Chat App</v-tab>
+        <v-tab key="4">Larallo</v-tab>
+        <v-tab key="3">MoviesTitle</v-tab>
         <v-tab key="2">Mültitaskÿ</v-tab>
         <v-tab key="1">Fleeting</v-tab>
       </v-tabs>
@@ -105,6 +105,7 @@
             </v-dialog>
           </v-card>
         </v-tab-item>
+
         <v-tab-item key="6">
           <v-card color="main" dark flat>
             <v-card-text class="white--text">
@@ -166,6 +167,7 @@
             </v-dialog>
           </v-card>
         </v-tab-item>
+
         <v-tab-item key="5">
           <v-card color="main" dark flat>
             <v-card-text class="white--text">
@@ -227,7 +229,70 @@
             </v-dialog>
           </v-card>
         </v-tab-item>
+
         <v-tab-item key="4">
+          <v-card color="main" dark flat>
+            <v-card-text class="white--text">
+              {{ $t("larallo") }}
+              <a
+                  href="https://larallovue3quasar.herokuapp.com/"
+                  target="_blank"
+                  class="white--text"
+              >
+                Larallo
+              </a>
+            </v-card-text>
+            <v-dialog v-model="dialogLarallo">
+              <template v-slot:activator="{ on, attrs }">
+                <v-row v-on="on" v-bind="attrs" dense>
+                  <v-col cols="12" md="6">
+                    <v-img
+                        :src="larallo[0].src"
+                        class="main"
+                        eager
+                        aspect-ratio="1.7778"
+                    />
+                  </v-col>
+
+                  <v-col class="d-none d-md-block" md="6">
+                    <v-img
+                        :src="larallo[1].src"
+                        class="main"
+                        eager
+                        aspect-ratio="1.7778"
+                    />
+                  </v-col>
+                </v-row>
+              </template>
+
+              <v-card>
+                <v-carousel
+                    continuous
+                    cycle
+                    interval="5000"
+                    height="auto"
+                >
+                  <v-carousel-item
+                      v-for="(item, i) in larallo"
+                      :key="i"
+                  >
+                    <v-sheet height="100%" color="main">
+                      <v-img
+                          :src="item.src"
+                          contain
+                          eager
+                          max-height="645"
+                          @click="dialogLarallo = false"
+                      />
+                    </v-sheet>
+                  </v-carousel-item>
+                </v-carousel>
+              </v-card>
+            </v-dialog>
+          </v-card>
+        </v-tab-item>
+
+        <v-tab-item key="3">
           <v-card color="main" dark flat>
             <v-card-text class="white--text">
               {{ $t("moviesTitle") }}
@@ -288,67 +353,7 @@
             </v-dialog>
           </v-card>
         </v-tab-item>
-        <v-tab-item key="3">
-          <v-card color="main" dark flat>
-            <v-card-text class="white--text">
-              {{ $t("larallo") }}
-              <a
-                  href="https://larallo-test.herokuapp.com/"
-                  target="_blank"
-                  class="white--text"
-              >
-                Laravel Chat App
-              </a>
-            </v-card-text>
-            <v-dialog v-model="dialogLarallo">
-              <template v-slot:activator="{ on, attrs }">
-                <v-row v-on="on" v-bind="attrs" dense>
-                  <v-col cols="12" md="6">
-                    <v-img
-                        :src="larallo[0].src"
-                        class="main"
-                        eager
-                        aspect-ratio="1.7778"
-                    />
-                  </v-col>
 
-                  <v-col class="d-none d-md-block" md="6">
-                    <v-img
-                        :src="larallo[1].src"
-                        class="main"
-                        eager
-                        aspect-ratio="1.7778"
-                    />
-                  </v-col>
-                </v-row>
-              </template>
-
-              <v-card>
-                <v-carousel
-                    continuous
-                    cycle
-                    interval="5000"
-                    height="auto"
-                >
-                  <v-carousel-item
-                      v-for="(item, i) in larallo"
-                      :key="i"
-                  >
-                    <v-sheet height="100%" color="main">
-                      <v-img
-                          :src="item.src"
-                          contain
-                          eager
-                          max-height="645"
-                          @click="dialogLarallo = false"
-                      />
-                    </v-sheet>
-                  </v-carousel-item>
-                </v-carousel>
-              </v-card>
-            </v-dialog>
-          </v-card>
-        </v-tab-item>
         <v-tab-item key="2">
           <v-card color="main" dark flat>
             <v-card-text class="white--text">
@@ -412,6 +417,7 @@
             </v-dialog>
           </v-card>
         </v-tab-item>
+
         <v-tab-item key="1">
           <v-card color="main" dark flat>
             <v-card-text class="white--text">
@@ -561,10 +567,10 @@ export default {
       ],
       larallo: [
         {
-          src: require("../assets/larallo/screenshot1.png"),
+          src: require("../assets/larallo/newversion1.png"),
         },
         {
-          src: require("../assets/larallo/screenshot2.png"),
+          src: require("../assets/larallo/newversion2.png"),
         },
       ],
     };
