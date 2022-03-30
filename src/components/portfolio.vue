@@ -495,7 +495,7 @@ export default {
           src: require("../assets/multitask/Screenshot1-min.png"),
         },
         {
-          src: require("../assets/multitask/Screenshot2-min.png"),
+          src: require("../assets/multitask/Screenshot2-min.jpg"),
         },
         {
           src: require("../assets/multitask/Screenshot3-min.png"),
@@ -526,13 +526,13 @@ export default {
       ],
       fleeting: [
         {
-          src: require("../assets/fleeting/Screenshot1-min.png"),
+          src: require("../assets/fleeting/Screenshot1-min.jpg"),
         },
         {
-          src: require("../assets/fleeting/Screenshot2-min.png"),
+          src: require("../assets/fleeting/Screenshot2-min.jpg"),
         },
         {
-          src: require("../assets/fleeting/Screenshot3-min.png"),
+          src: require("../assets/fleeting/Screenshot3-min.jpg"),
         },
       ],
       mynextgame: [
@@ -556,13 +556,13 @@ export default {
       ],
       hackaton: [
         {
-          src: require("../assets/puzzle/screenshot1.png"),
+          src: require("../assets/puzzle/screenshot1-min.png"),
         },
         {
-          src: require("../assets/puzzle/screenshot2.png"),
+          src: require("../assets/puzzle/screenshot2-min.png"),
         },
         {
-          src: require("../assets/puzzle/screenshot3.png"),
+          src: require("../assets/puzzle/screenshot3-min.png"),
         },
       ],
       larallo: [
