@@ -13,6 +13,7 @@ import riveIcon from "@/assets/icons/riveIcon";
 import laravelIcon from "@/assets/icons/laravelIcon";
 import expressjsIcon from "@/assets/icons/expressjsIcon";
 import mongoDBIcon from "@/assets/icons/mongoDBIcon";
+import wordpressIcon from "@/assets/icons/wordpressIcon";
 
 Vue.use(Vuetify);
 
@@ -60,6 +61,9 @@ export default new Vuetify({
             },
             mongoDBIcon: {
                 component: mongoDBIcon,
+            },
+            wordpressIcon: {
+                component: wordpressIcon,
             }
         },
     },
